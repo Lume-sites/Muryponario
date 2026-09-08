@@ -1,0 +1,1535 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <title>
+    Contato | Muryponário
+  </title>
+
+  <meta
+    name="description"
+    content="Entre em contato com a Muryponário. Tire dúvidas sobre produtos, encomendas, eventos, parcerias e outras possibilidades."
+  >
+
+  <meta
+    name="theme-color"
+    content="#fffaf1"
+  >
+
+
+  <!-- =====================================
+       FAVICON
+  ====================================== -->
+
+  <link
+    rel="icon"
+    type="image/png"
+    href="imagens/favicon-muryponario.png"
+  >
+
+  <link
+    rel="apple-touch-icon"
+    href="imagens/favicon-muryponario.png"
+  >
+
+
+  <!-- =====================================
+       FONTES
+  ====================================== -->
+
+  <link
+    rel="preconnect"
+    href="https://fonts.googleapis.com"
+  >
+
+  <link
+    rel="preconnect"
+    href="https://fonts.gstatic.com"
+    crossorigin
+  >
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+    rel="stylesheet"
+  >
+
+
+  <!-- =====================================
+       CSS GERAL
+  ====================================== -->
+
+  <link
+    rel="stylesheet"
+    href="style.css"
+  >
+
+
+  <!-- =====================================
+       CSS DA PÁGINA DE CONTATO
+  ====================================== -->
+
+  <style>
+
+    /* ========================================
+       HERO CONTATO
+    ======================================== */
+
+    .contact-hero {
+      padding: 92px 0 78px;
+
+      text-align: center;
+
+      background:
+        linear-gradient(
+          180deg,
+          #fff8e3 0%,
+          #f8eabe 100%
+        );
+
+      border-bottom:
+        1px solid var(--border);
+    }
+
+    .contact-hero .container {
+      max-width: 780px;
+    }
+
+    .contact-hero h1 {
+      margin-bottom: 20px;
+
+      color: var(--text);
+
+      font-size:
+        clamp(
+          3rem,
+          6vw,
+          4.7rem
+        );
+    }
+
+    .contact-hero p {
+      max-width: 650px;
+
+      margin:
+        0 auto;
+
+      color: var(--text-soft);
+
+      font-size: 1rem;
+
+      line-height: 1.8;
+    }
+
+
+    /* ========================================
+       ÁREA PRINCIPAL
+    ======================================== */
+
+    .contact-section {
+      padding:
+        90px 0 110px;
+
+      background:
+        var(--cream-soft);
+    }
+
+    .contact-layout {
+      display: grid;
+
+      grid-template-columns:
+        0.82fr 1.18fr;
+
+      align-items: start;
+
+      gap: 80px;
+    }
+
+
+    /* ========================================
+       LADO ESQUERDO
+    ======================================== */
+
+    .contact-info {
+      position: sticky;
+
+      top: 135px;
+    }
+
+    .contact-info h2 {
+      max-width: 440px;
+
+      margin-bottom: 23px;
+
+      color: var(--text);
+    }
+
+    .contact-info > p {
+      max-width: 470px;
+
+      margin-bottom: 34px;
+
+      line-height: 1.8;
+    }
+
+
+    /* ========================================
+       DETALHES DE CONTATO
+    ======================================== */
+
+    .contact-details {
+      display: flex;
+      flex-direction: column;
+
+      gap: 16px;
+    }
+
+    .contact-detail {
+      display: flex;
+      align-items: center;
+
+      gap: 15px;
+
+      padding:
+        16px 18px;
+
+      border:
+        1px solid rgba(166, 120, 8, 0.14);
+
+      border-radius: 10px;
+
+      background:
+        rgba(255, 253, 247, 0.72);
+    }
+
+    .contact-detail-icon {
+      width: 42px;
+      height: 42px;
+
+      flex: 0 0 42px;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      border-radius: 50%;
+
+      background:
+        #f6e6ae;
+
+      color:
+        var(--gold-dark);
+
+      font-size: 1.1rem;
+    }
+
+    .contact-detail-content {
+      display: flex;
+      flex-direction: column;
+
+      min-width: 0;
+    }
+
+    .contact-detail-content strong {
+      margin-bottom: 1px;
+
+      color:
+        var(--text);
+
+      font-size: 0.84rem;
+    }
+
+    .contact-detail-content span,
+    .contact-detail-content a {
+      color:
+        var(--text-soft);
+
+      font-size: 0.82rem;
+
+      line-height: 1.45;
+    }
+
+    .contact-detail-content a:hover {
+      color:
+        var(--gold-dark);
+    }
+
+
+    /* ========================================
+       FORMULÁRIO
+    ======================================== */
+
+    .contact-form-card {
+      padding:
+        42px;
+
+      border:
+        1px solid rgba(166, 120, 8, 0.15);
+
+      border-radius:
+        14px;
+
+      background:
+        #fffdf7;
+
+      box-shadow:
+        0 18px 45px rgba(122, 87, 10, 0.07);
+    }
+
+    .contact-form-header {
+      margin-bottom:
+        31px;
+    }
+
+    .contact-form-header h2 {
+      margin-bottom:
+        9px;
+
+      color:
+        var(--text);
+
+      font-size:
+        clamp(
+          1.8rem,
+          3vw,
+          2.45rem
+        );
+    }
+
+    .contact-form-header p {
+      font-size:
+        0.89rem;
+
+      line-height:
+        1.7;
+    }
+
+
+    /* ========================================
+       GRID DO FORMULÁRIO
+    ======================================== */
+
+    .contact-form {
+      display:
+        grid;
+
+      grid-template-columns:
+        repeat(2, minmax(0, 1fr));
+
+      gap:
+        20px;
+    }
+
+    .form-group {
+      display:
+        flex;
+
+      flex-direction:
+        column;
+
+      gap:
+        8px;
+
+      min-width:
+        0;
+    }
+
+    .form-group-full {
+      grid-column:
+        1 / -1;
+    }
+
+    .form-group label {
+      color:
+        var(--text);
+
+      font-size:
+        0.79rem;
+
+      font-weight:
+        700;
+    }
+
+    .form-group label span {
+      color:
+        var(--gold-dark);
+    }
+
+
+    /* ========================================
+       INPUTS
+    ======================================== */
+
+    .contact-input,
+    .contact-select,
+    .contact-textarea {
+      width:
+        100%;
+
+      border:
+        1px solid rgba(166, 120, 8, 0.22);
+
+      border-radius:
+        8px;
+
+      background:
+        #fffaf1;
+
+      color:
+        var(--text);
+
+      font-family:
+        "DM Sans",
+        sans-serif;
+
+      font-size:
+        0.91rem;
+
+      outline:
+        none;
+
+      transition:
+        border-color 0.2s ease,
+        box-shadow 0.2s ease,
+        background-color 0.2s ease;
+    }
+
+    .contact-input,
+    .contact-select {
+      min-height:
+        52px;
+
+      padding:
+        0 15px;
+    }
+
+    .contact-textarea {
+      min-height:
+        155px;
+
+      resize:
+        vertical;
+
+      padding:
+        15px;
+
+      line-height:
+        1.6;
+    }
+
+    .contact-input::placeholder,
+    .contact-textarea::placeholder {
+      color:
+        #a69670;
+    }
+
+    .contact-input:focus,
+    .contact-select:focus,
+    .contact-textarea:focus {
+      border-color:
+        var(--gold);
+
+      background:
+        #ffffff;
+
+      box-shadow:
+        0 0 0 3px rgba(213, 166, 41, 0.12);
+    }
+
+
+    /* ========================================
+       BOTÃO ENVIAR
+    ======================================== */
+
+    .contact-submit-wrapper {
+      grid-column:
+        1 / -1;
+
+      margin-top:
+        6px;
+    }
+
+    .contact-submit {
+      width:
+        100%;
+
+      min-height:
+        56px;
+
+      border:
+        0;
+
+      border-radius:
+        8px;
+
+      background:
+        var(--olive);
+
+      color:
+        #ffffff;
+
+      font-family:
+        "DM Sans",
+        sans-serif;
+
+      font-size:
+        0.91rem;
+
+      font-weight:
+        700;
+
+      cursor:
+        pointer;
+
+      transition:
+        background-color 0.2s ease,
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+    }
+
+    .contact-submit:hover {
+      background:
+        var(--olive-dark);
+
+      transform:
+        translateY(-2px);
+
+      box-shadow:
+        0 10px 25px rgba(91, 102, 55, 0.18);
+    }
+
+    .contact-submit:active {
+      transform:
+        translateY(0);
+    }
+
+
+    /* ========================================
+       OBSERVAÇÃO
+    ======================================== */
+
+    .contact-form-note {
+      grid-column:
+        1 / -1;
+
+      margin-top:
+        -4px;
+
+      color:
+        #95845e;
+
+      font-size:
+        0.72rem;
+
+      line-height:
+        1.55;
+
+      text-align:
+        center;
+    }
+
+
+    /* ========================================
+       MENSAGEM DE ERRO
+    ======================================== */
+
+    .contact-form-message {
+      display:
+        none;
+
+      grid-column:
+        1 / -1;
+
+      padding:
+        12px 14px;
+
+      border-radius:
+        7px;
+
+      background:
+        #fff0dc;
+
+      color:
+        #745118;
+
+      font-size:
+        0.82rem;
+
+      line-height:
+        1.5;
+    }
+
+    .contact-form-message.visible {
+      display:
+        block;
+    }
+
+
+    /* ========================================
+       TABLET
+    ======================================== */
+
+    @media (max-width: 1000px) {
+
+      .contact-section {
+        padding:
+          78px 0 90px;
+      }
+
+      .contact-layout {
+        grid-template-columns:
+          1fr;
+
+        gap:
+          50px;
+      }
+
+      .contact-info {
+        position:
+          static;
+
+        max-width:
+          680px;
+      }
+
+      .contact-details {
+        display:
+          grid;
+
+        grid-template-columns:
+          repeat(2, minmax(0, 1fr));
+      }
+
+    }
+
+
+    /* ========================================
+       MOBILE
+    ======================================== */
+
+    @media (max-width: 650px) {
+
+      .contact-hero {
+        padding:
+          65px 0 58px;
+      }
+
+      .contact-hero h1 {
+        font-size:
+          clamp(
+            2.7rem,
+            12vw,
+            3.6rem
+          );
+      }
+
+      .contact-section {
+        padding:
+          60px 0 75px;
+      }
+
+      .contact-layout {
+        gap:
+          38px;
+      }
+
+      .contact-details {
+        grid-template-columns:
+          1fr;
+      }
+
+      .contact-form-card {
+        padding:
+          28px 20px;
+      }
+
+      .contact-form {
+        grid-template-columns:
+          1fr;
+
+        gap:
+          17px;
+      }
+
+      .form-group-full,
+      .contact-submit-wrapper,
+      .contact-form-note,
+      .contact-form-message {
+        grid-column:
+          auto;
+      }
+
+      .contact-input,
+      .contact-select,
+      .contact-textarea {
+        font-size:
+          16px;
+      }
+
+    }
+
+  </style>
+
+</head>
+
+
+<body>
+
+
+  <!-- =====================================
+       HEADER
+  ====================================== -->
+
+  <header class="header">
+
+    <div class="container header-container">
+
+      <a
+        href="index.html"
+        class="logo-link"
+        aria-label="Muryponário - Página inicial"
+      >
+
+        <img
+          src="imagens/logo-muryponario.png"
+          alt="Muryponário"
+          class="logo"
+        >
+
+      </a>
+
+
+      <nav
+        class="nav"
+        id="nav"
+      >
+
+        <a
+          href="index.html"
+          class="nav-link"
+        >
+          Início
+        </a>
+
+        <a
+          href="produtos.html"
+          class="nav-link"
+        >
+          Produtos
+        </a>
+
+        <a
+          href="index.html#encomendas"
+          class="nav-link"
+        >
+          Encomendas
+        </a>
+
+        <a
+          href="sobre.html"
+          class="nav-link"
+        >
+          Sobre
+        </a>
+
+        <a
+          href="contato.html"
+          class="nav-link active"
+        >
+          Contato
+        </a>
+
+      </nav>
+
+
+      <a
+        href="#"
+        class="btn btn-whatsapp header-whatsapp js-whatsapp"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Falar no WhatsApp
+      </a>
+
+
+      <button
+        class="menu-toggle"
+        id="menuToggle"
+        aria-label="Abrir menu"
+        aria-expanded="false"
+      >
+
+        <span></span>
+        <span></span>
+        <span></span>
+
+      </button>
+
+    </div>
+
+  </header>
+
+
+  <main>
+
+
+    <!-- =====================================
+         HERO
+    ====================================== -->
+
+    <section class="contact-hero">
+
+      <div class="container">
+
+        <span class="eyebrow">
+          Fale com a gente
+        </span>
+
+        <h1>
+          Vamos conversar?
+        </h1>
+
+        <p>
+          Quer saber mais sobre um produto, fazer uma encomenda,
+          propor uma parceria ou simplesmente tirar uma dúvida?
+          Conte para a gente. Sua mensagem será enviada
+          diretamente para o WhatsApp da Muryponário.
+        </p>
+
+      </div>
+
+    </section>
+
+
+    <!-- =====================================
+         CONTATO
+    ====================================== -->
+
+    <section class="contact-section">
+
+      <div class="container contact-layout">
+
+
+        <!-- =====================================
+             INFORMAÇÕES
+        ====================================== -->
+
+        <div class="contact-info">
+
+          <span class="eyebrow">
+            Contato
+          </span>
+
+          <h2>
+            Estamos aqui para
+            ouvir você.
+          </h2>
+
+          <p>
+            Preencha seus dados e conte um pouco sobre
+            o que você procura. Ao enviar, vamos organizar
+            todas as informações em uma mensagem e abrir
+            diretamente uma conversa no WhatsApp.
+          </p>
+
+
+          <div class="contact-details">
+
+
+            <div class="contact-detail">
+
+              <span
+                class="contact-detail-icon"
+                aria-hidden="true"
+              >
+                ☏
+              </span>
+
+              <div class="contact-detail-content">
+
+                <strong>
+                  WhatsApp
+                </strong>
+
+                <a
+                  href="https://wa.me/5522999973287"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  (22) 99997-3287
+                </a>
+
+              </div>
+
+            </div>
+
+
+            <div class="contact-detail">
+
+              <span
+                class="contact-detail-icon"
+                aria-hidden="true"
+              >
+                ⌖
+              </span>
+
+              <div class="contact-detail-content">
+
+                <strong>
+                  Localização
+                </strong>
+
+                <span>
+                  Nova Friburgo — RJ
+                </span>
+
+              </div>
+
+            </div>
+
+
+            <div class="contact-detail">
+
+              <span
+                class="contact-detail-icon"
+                aria-hidden="true"
+              >
+                ◎
+              </span>
+
+              <div class="contact-detail-content">
+
+                <strong>
+                  Instagram
+                </strong>
+
+                <a
+                  href="https://www.instagram.com/muryponario/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  @muryponario
+                </a>
+
+              </div>
+
+            </div>
+
+
+            <div class="contact-detail">
+
+              <span
+                class="contact-detail-icon"
+                aria-hidden="true"
+              >
+                ♡
+              </span>
+
+              <div class="contact-detail-content">
+
+                <strong>
+                  Atendimento
+                </strong>
+
+                <span>
+                  Produtos, encomendas e parcerias
+                </span>
+
+              </div>
+
+            </div>
+
+
+          </div>
+
+        </div>
+
+
+        <!-- =====================================
+             FORMULÁRIO
+        ====================================== -->
+
+        <div class="contact-form-card">
+
+          <div class="contact-form-header">
+
+            <span class="eyebrow">
+              Envie sua mensagem
+            </span>
+
+            <h2>
+              Como podemos ajudar?
+            </h2>
+
+            <p>
+              Preencha os campos abaixo. Você poderá revisar
+              a mensagem no WhatsApp antes de enviá-la.
+            </p>
+
+          </div>
+
+
+          <form
+            class="contact-form"
+            id="contactForm"
+            novalidate
+          >
+
+
+            <!-- NOME -->
+
+            <div class="form-group">
+
+              <label for="contactName">
+                Nome <span>*</span>
+              </label>
+
+              <input
+                type="text"
+                id="contactName"
+                class="contact-input"
+                placeholder="Seu nome"
+                autocomplete="name"
+                required
+              >
+
+            </div>
+
+
+            <!-- WHATSAPP -->
+
+            <div class="form-group">
+
+              <label for="contactPhone">
+                WhatsApp <span>*</span>
+              </label>
+
+              <input
+                type="tel"
+                id="contactPhone"
+                class="contact-input"
+                placeholder="(22) 99999-9999"
+                autocomplete="tel"
+                required
+              >
+
+            </div>
+
+
+            <!-- E-MAIL -->
+
+            <div class="form-group">
+
+              <label for="contactEmail">
+                E-mail
+              </label>
+
+              <input
+                type="email"
+                id="contactEmail"
+                class="contact-input"
+                placeholder="seuemail@email.com"
+                autocomplete="email"
+              >
+
+            </div>
+
+
+            <!-- CIDADE -->
+
+            <div class="form-group">
+
+              <label for="contactCity">
+                Cidade / Estado
+              </label>
+
+              <input
+                type="text"
+                id="contactCity"
+                class="contact-input"
+                placeholder="Ex.: Nova Friburgo - RJ"
+                autocomplete="address-level2"
+              >
+
+            </div>
+
+
+            <!-- ASSUNTO -->
+
+            <div class="form-group form-group-full">
+
+              <label for="contactSubject">
+                Assunto <span>*</span>
+              </label>
+
+              <select
+                id="contactSubject"
+                class="contact-select"
+                required
+              >
+
+                <option value="">
+                  Selecione o assunto
+                </option>
+
+                <option value="Dúvidas sobre produtos">
+                  Dúvidas sobre produtos
+                </option>
+
+                <option value="Encomendas especiais">
+                  Encomendas especiais
+                </option>
+
+                <option value="Hotéis e pousadas">
+                  Hotéis & pousadas
+                </option>
+
+                <option value="Eventos e lembranças">
+                  Eventos e lembranças
+                </option>
+
+                <option value="Revenda ou parceria comercial">
+                  Revenda ou parceria comercial
+                </option>
+
+                <option value="Oficinas e educação sobre abelhas">
+                  Oficinas e educação sobre abelhas
+                </option>
+
+                <option value="Visitas, feiras e encontros">
+                  Visitas, feiras e encontros
+                </option>
+
+                <option value="Outro assunto">
+                  Outro assunto
+                </option>
+
+              </select>
+
+            </div>
+
+
+            <!-- MENSAGEM -->
+
+            <div class="form-group form-group-full">
+
+              <label for="contactMessage">
+                Sua mensagem <span>*</span>
+              </label>
+
+              <textarea
+                id="contactMessage"
+                class="contact-textarea"
+                placeholder="Conte um pouco sobre o que você procura, sua dúvida, quantidade desejada ou qualquer informação que possa nos ajudar a entender melhor o seu pedido."
+                required
+              ></textarea>
+
+            </div>
+
+
+            <!-- ERRO -->
+
+            <div
+              class="contact-form-message"
+              id="contactFormMessage"
+              role="alert"
+              aria-live="polite"
+            >
+            </div>
+
+
+            <!-- BOTÃO -->
+
+            <div class="contact-submit-wrapper">
+
+              <button
+                type="submit"
+                class="contact-submit"
+              >
+                Enviar pelo WhatsApp
+              </button>
+
+            </div>
+
+
+            <p class="contact-form-note">
+              Ao clicar em “Enviar pelo WhatsApp”, uma conversa
+              será aberta com sua mensagem preenchida. Nada será
+              enviado automaticamente sem a sua confirmação.
+            </p>
+
+
+          </form>
+
+        </div>
+
+
+      </div>
+
+    </section>
+
+
+  </main>
+
+
+  <!-- =====================================
+       FOOTER
+  ====================================== -->
+
+  <footer
+    class="footer"
+    id="contato"
+  >
+
+    <div class="container footer-grid">
+
+
+      <div class="footer-brand">
+
+        <img
+          src="imagens/logo-muryponario-branco.png"
+          alt="Muryponário"
+          class="footer-logo"
+        >
+
+        <p>
+          Um projeto de família que une abelhas,
+          preservação, educação e produção artesanal
+          a partir da riqueza das colmeias.
+        </p>
+
+      </div>
+
+
+      <div class="footer-column">
+
+        <h3>
+          Navegação
+        </h3>
+
+        <a href="index.html">
+          Início
+        </a>
+
+        <a href="produtos.html">
+          Produtos
+        </a>
+
+        <a href="index.html#encomendas">
+          Encomendas
+        </a>
+
+        <a href="sobre.html">
+          Sobre
+        </a>
+
+        <a href="contato.html">
+          Contato
+        </a>
+
+      </div>
+
+
+      <div class="footer-column">
+
+        <h3>
+          Produtos
+        </h3>
+
+        <a href="produtos.html?categoria=beleza">
+          Beleza & Autocuidado
+        </a>
+
+        <a href="produtos.html?categoria=cuidados">
+          Cuidados Especiais
+        </a>
+
+        <a href="produtos.html?categoria=colmeia">
+          Colmeia & Natureza
+        </a>
+
+      </div>
+
+
+      <div class="footer-column">
+
+        <h3>
+          Contato
+        </h3>
+
+        <a
+          href="https://wa.me/5522999973287"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          WhatsApp
+        </a>
+
+        <a
+          href="https://www.instagram.com/muryponario/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Instagram
+        </a>
+
+        <p>
+          Nova Friburgo - RJ
+        </p>
+
+      </div>
+
+
+    </div>
+
+
+    <div class="container footer-bottom">
+
+      <p>
+        © <span id="currentYear"></span>
+        Muryponário. Todos os direitos reservados.
+      </p>
+
+    </div>
+
+  </footer>
+
+
+  <!-- =====================================
+       WHATSAPP FLUTUANTE
+  ====================================== -->
+
+  <a
+    href="#"
+    class="floating-whatsapp js-whatsapp"
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="Falar com a Muryponário pelo WhatsApp"
+  >
+
+    <svg
+      viewBox="0 0 64 64"
+      aria-hidden="true"
+      focusable="false"
+    >
+
+      <path
+        class="whatsapp-bubble"
+        d="M32 7.5C18.4 7.5 7.5 18.1 7.5 31.2c0 4.7 1.4 9.1 4 12.8L8.5 56.5l12.8-3.3c3.3 1.6 6.9 2.5 10.7 2.5 13.6 0 24.5-10.7 24.5-24.5S45.6 7.5 32 7.5Z"
+      />
+
+      <path
+        class="whatsapp-phone"
+        d="M23.1 19.7c.7-.7 1.8-.8 2.6-.3l3.7 2.4c.9.6 1.2 1.7.8 2.7l-1.7 4.1c-.3.7-.1 1.5.4 2.1 1.8 2.2 3.8 4.1 6.1 5.7.6.4 1.4.5 2.1.2l3.9-1.9c1-.5 2.1-.2 2.8.6l2.6 3.5c.6.8.5 1.9-.2 2.7l-2.2 2.4c-1.6 1.7-4 2.4-6.2 1.8-9.7-2.6-17.3-9.8-20.5-19.2-.8-2.3-.2-4.8 1.4-6.5l2.4-2.3Z"
+      />
+
+    </svg>
+
+  </a>
+
+
+  <!-- =====================================
+       JS GERAL
+  ====================================== -->
+
+  <script src="script.js"></script>
+
+
+  <!-- =====================================
+       JS DO FORMULÁRIO
+  ====================================== -->
+
+  <script>
+
+    const contactForm =
+      document.getElementById(
+        "contactForm"
+      );
+
+
+    const contactFormMessage =
+      document.getElementById(
+        "contactFormMessage"
+      );
+
+
+    if (
+      contactForm
+    ) {
+
+      contactForm.addEventListener(
+        "submit",
+        function (
+          event
+        ) {
+
+          event.preventDefault();
+
+
+          const name =
+            document
+              .getElementById(
+                "contactName"
+              )
+              .value
+              .trim();
+
+
+          const phone =
+            document
+              .getElementById(
+                "contactPhone"
+              )
+              .value
+              .trim();
+
+
+          const email =
+            document
+              .getElementById(
+                "contactEmail"
+              )
+              .value
+              .trim();
+
+
+          const city =
+            document
+              .getElementById(
+                "contactCity"
+              )
+              .value
+              .trim();
+
+
+          const subject =
+            document
+              .getElementById(
+                "contactSubject"
+              )
+              .value;
+
+
+          const message =
+            document
+              .getElementById(
+                "contactMessage"
+              )
+              .value
+              .trim();
+
+
+          /* =====================================
+             VALIDAÇÃO
+          ====================================== */
+
+          if (
+            !name ||
+            !phone ||
+            !subject ||
+            !message
+          ) {
+
+            contactFormMessage.textContent =
+              "Por favor, preencha seu nome, WhatsApp, assunto e mensagem.";
+
+
+            contactFormMessage.classList.add(
+              "visible"
+            );
+
+
+            return;
+
+          }
+
+
+          contactFormMessage.classList.remove(
+            "visible"
+          );
+
+
+          /* =====================================
+             MONTAR MENSAGEM
+          ====================================== */
+
+          let whatsappMessage =
+            `Olá! Vim pelo site da Muryponário.%0A%0A`;
+
+
+          whatsappMessage +=
+            `*FICHA DE CONTATO*%0A`;
+
+
+          whatsappMessage +=
+            `——————————————%0A`;
+
+
+          whatsappMessage +=
+            `*Nome:* ${name}%0A`;
+
+
+          whatsappMessage +=
+            `*WhatsApp:* ${phone}%0A`;
+
+
+          if (
+            email
+          ) {
+
+            whatsappMessage +=
+              `*E-mail:* ${email}%0A`;
+
+          }
+
+
+          if (
+            city
+          ) {
+
+            whatsappMessage +=
+              `*Cidade / Estado:* ${city}%0A`;
+
+          }
+
+
+          whatsappMessage +=
+            `*Assunto:* ${subject}%0A%0A`;
+
+
+          whatsappMessage +=
+            `*Mensagem:*%0A${message}`;
+
+
+          /* =====================================
+             ABRIR WHATSAPP
+          ====================================== */
+
+          const whatsappURL =
+            `https://wa.me/5522999973287?text=${whatsappMessage}`;
+
+
+          window.open(
+            whatsappURL,
+            "_blank",
+            "noopener,noreferrer"
+          );
+
+        }
+      );
+
+    }
+
+  </script>
+
+
+</body>
+
+</html>

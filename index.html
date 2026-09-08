@@ -1,0 +1,2055 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <title>
+    Muryponário | Produtos à base de cera, mel e própolis
+  </title>
+
+  <meta
+    name="description"
+    content="Conheça a Muryponário. Produtos feitos à base de cera, mel e própolis para beleza, autocuidado, cuidados especiais, pets, casa e natureza. Também aceitamos encomendas especiais."
+  >
+
+  <meta
+    name="theme-color"
+    content="#fffaf1"
+  >
+
+
+  <!-- =====================================
+       FAVICON
+  ====================================== -->
+
+  <link
+    rel="icon"
+    type="image/png"
+    href="imagens/favicon-muryponario.png"
+  >
+
+  <link
+    rel="apple-touch-icon"
+    href="imagens/favicon-muryponario.png"
+  >
+
+
+  <!-- =====================================
+       OPEN GRAPH
+  ====================================== -->
+
+  <meta
+    property="og:type"
+    content="website"
+  >
+
+  <meta
+    property="og:locale"
+    content="pt_BR"
+  >
+
+  <meta
+    property="og:site_name"
+    content="Muryponário"
+  >
+
+  <meta
+    property="og:title"
+    content="Muryponário | Beleza natural direto da colmeia"
+  >
+
+  <meta
+    property="og:description"
+    content="Produtos feitos à base de cera, mel e própolis para beleza, autocuidado, cuidados especiais, pets, casa e natureza."
+  >
+
+  <meta
+    property="og:image"
+    content="https://SEU-DOMINIO.com.br/imagens/muryponario-compartilhamento.jpg"
+  >
+
+
+  <!-- =====================================
+       TWITTER / X
+  ====================================== -->
+
+  <meta
+    name="twitter:card"
+    content="summary_large_image"
+  >
+
+  <meta
+    name="twitter:title"
+    content="Muryponário | Beleza natural direto da colmeia"
+  >
+
+  <meta
+    name="twitter:description"
+    content="Produtos feitos à base de cera, mel e própolis para beleza, autocuidado, cuidados especiais, pets, casa e natureza."
+  >
+
+  <meta
+    name="twitter:image"
+    content="https://SEU-DOMINIO.com.br/imagens/muryponario-compartilhamento.jpg"
+  >
+
+
+  <!-- =====================================
+       FONTES
+  ====================================== -->
+
+  <link
+    rel="preconnect"
+    href="https://fonts.googleapis.com"
+  >
+
+  <link
+    rel="preconnect"
+    href="https://fonts.gstatic.com"
+    crossorigin
+  >
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+    rel="stylesheet"
+  >
+
+
+  <!-- =====================================
+       CSS
+  ====================================== -->
+
+  <link
+    rel="stylesheet"
+    href="style.css"
+  >
+
+
+  <!-- =====================================
+       AJUSTES EXCLUSIVOS DO INDEX NO MOBILE
+       Desktop permanece inalterado
+  ====================================== -->
+
+  <style>
+
+    .mobile-swipe-hint {
+      display: none;
+    }
+
+    @media (max-width: 650px) {
+
+      body {
+        overflow-x: hidden;
+      }
+
+
+      /* =====================================
+         HEADER MAIS COMPACTO
+      ====================================== */
+
+      .header-container {
+        min-height: 72px;
+      }
+
+      .logo {
+        width: 180px;
+        max-height: 62px;
+      }
+
+      .menu-toggle {
+        width: 38px;
+        height: 38px;
+      }
+
+      .menu-toggle span {
+        width: 23px;
+        margin: 4px auto;
+      }
+
+      .nav.mobile-open {
+        top: 72px;
+        gap: 0;
+        padding: 14px 20px 18px;
+      }
+
+      .nav.mobile-open .nav-link {
+        width: 100%;
+        padding: 11px 0;
+        border-bottom: 1px solid rgba(166, 120, 8, 0.10);
+      }
+
+
+      /* =====================================
+         HERO MAIS CURTO
+      ====================================== */
+
+      .hero {
+        min-height: 560px;
+      }
+
+      .hero-image {
+        object-position: 64% center;
+      }
+
+      .hero-content {
+        padding-bottom: 24px;
+      }
+
+      .hero-text {
+        width: 100%;
+        padding: 195px 0 0;
+      }
+
+      .hero-eyebrow {
+        margin-bottom: 13px;
+        padding: 6px 11px;
+        font-size: 0.66rem;
+      }
+
+      .hero h1 {
+        margin-bottom: 15px;
+        font-size: clamp(2.65rem, 11vw, 3.25rem);
+        line-height: 1.02;
+      }
+
+      .hero-description {
+        max-width: 100%;
+        font-size: 0.91rem;
+        line-height: 1.58;
+      }
+
+      .hero-buttons {
+        gap: 8px;
+        margin-top: 20px;
+      }
+
+      .hero-buttons .btn {
+        min-height: 46px;
+        width: 100%;
+        padding: 0 17px;
+        font-size: 0.82rem;
+      }
+
+
+      /* =====================================
+         CERA / MEL / PRÓPOLIS
+         UMA FAIXA COMPACTA
+      ====================================== */
+
+      .brand-formula {
+        padding: 22px 0;
+      }
+
+      .brand-formula-content {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 0;
+      }
+
+      .formula-item {
+        min-width: 0;
+        flex-direction: column;
+        justify-content: center;
+        gap: 7px;
+        padding: 0 9px;
+        text-align: center;
+      }
+
+      .formula-item:not(:last-child) {
+        border-right: 1px solid rgba(166, 120, 8, 0.14);
+      }
+
+      .formula-icon {
+        width: 34px;
+        height: 34px;
+        flex-basis: 34px;
+        font-size: 0.96rem;
+      }
+
+      .formula-item strong {
+        font-size: 0.92rem;
+      }
+
+      .formula-item span:last-child {
+        display: none;
+      }
+
+
+      /* =====================================
+         ESPAÇAMENTO GERAL
+      ====================================== */
+
+      .section {
+        padding: 52px 0;
+      }
+
+      .section-heading {
+        margin-bottom: 26px;
+      }
+
+      .section-heading .eyebrow {
+        margin-bottom: 10px;
+      }
+
+      .section-heading h2 {
+        margin-bottom: 12px;
+        font-size: 2.45rem;
+        line-height: 1.06;
+      }
+
+      .section-heading p {
+        max-width: 95%;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 0.9rem;
+        line-height: 1.6;
+      }
+
+
+      /* =====================================
+         DICA DE ARRASTAR
+      ====================================== */
+
+      .mobile-swipe-hint {
+        display: block;
+        margin: -9px 0 14px;
+        color: var(--gold-dark);
+        font-size: 0.7rem;
+        font-weight: 700;
+        letter-spacing: 0.07em;
+        text-align: right;
+        text-transform: uppercase;
+      }
+
+
+      /* =====================================
+         NOSSOS PRODUTOS
+         CARROSSEL HORIZONTAL NATIVO
+      ====================================== */
+
+      .products-highlight {
+        padding-bottom: 44px;
+      }
+
+      .home-products-three {
+        display: flex;
+        grid-template-columns: none;
+        gap: 14px;
+        max-width: none;
+        margin: 0;
+        padding: 2px 10vw 12px 1px;
+
+        overflow-x: auto;
+        overflow-y: hidden;
+
+        scroll-snap-type: x mandatory;
+        scroll-padding-left: 1px;
+
+        -webkit-overflow-scrolling: touch;
+
+        scrollbar-width: none;
+      }
+
+      .home-products-three::-webkit-scrollbar {
+        display: none;
+      }
+
+      .home-products-three .product-card {
+        flex: 0 0 83%;
+
+        scroll-snap-align: start;
+
+        border-radius: 10px;
+      }
+
+      .home-products-three .product-image-wrapper {
+        height: 230px;
+
+        aspect-ratio: auto;
+      }
+
+      .home-products-three .product-image {
+        width: 100%;
+        height: 100%;
+
+        object-fit: cover;
+      }
+
+      .home-products-three .product-info {
+        padding: 19px 18px 21px;
+      }
+
+      .home-products-three .product-category {
+        margin-bottom: 6px;
+
+        font-size: 0.61rem;
+      }
+
+      .home-products-three .product-info h3 {
+        margin-bottom: 8px;
+
+        font-size: 1.45rem;
+      }
+
+      .home-products-three .product-info p {
+        min-height: 0;
+
+        margin-bottom: 0;
+
+        font-size: 0.82rem;
+
+        line-height: 1.55;
+
+        display: -webkit-box;
+
+        -webkit-line-clamp: 3;
+        line-clamp: 3;
+
+        -webkit-box-orient: vertical;
+
+        overflow: hidden;
+      }
+
+      .home-products-three .product-link {
+        margin-top: 12px;
+
+        font-size: 0.77rem;
+      }
+
+      .products-highlight .section-button {
+        margin-top: 22px;
+      }
+
+      .products-highlight .section-button .btn {
+        width: 100%;
+
+        min-height: 48px;
+      }
+
+
+      /* =====================================
+         ENCOMENDAS
+         CARROSSEL HORIZONTAL NATIVO
+      ====================================== */
+
+      .orders-section {
+        padding-top: 50px;
+        padding-bottom: 48px;
+      }
+
+      .orders-header {
+        gap: 14px;
+
+        margin-bottom: 26px;
+      }
+
+      .orders-header .eyebrow {
+        margin-bottom: 10px;
+      }
+
+      .orders-header h2 {
+        font-size: 2.5rem;
+
+        line-height: 1.06;
+      }
+
+      .orders-intro p {
+        margin-bottom: 9px;
+
+        font-size: 0.89rem;
+
+        line-height: 1.58;
+      }
+
+      .orders-grid {
+        display: flex;
+
+        grid-template-columns: none;
+
+        gap: 14px;
+
+        margin: 0;
+
+        padding: 2px 10vw 12px 1px;
+
+        overflow-x: auto;
+        overflow-y: hidden;
+
+        scroll-snap-type: x mandatory;
+        scroll-padding-left: 1px;
+
+        -webkit-overflow-scrolling: touch;
+
+        scrollbar-width: none;
+      }
+
+      .orders-grid::-webkit-scrollbar {
+        display: none;
+      }
+
+      .order-card,
+      .order-card:last-child {
+        flex: 0 0 84%;
+
+        grid-column: auto;
+
+        min-height: 0;
+
+        scroll-snap-align: start;
+
+        border-radius: 10px;
+      }
+
+      .order-card-image-wrapper {
+        height: 205px;
+
+        aspect-ratio: auto;
+      }
+
+      .order-card-image {
+        width: 100%;
+        height: 100%;
+
+        object-fit: cover;
+      }
+
+      .order-card-content {
+        padding: 19px 18px 21px;
+      }
+
+      .order-card-top {
+        margin-bottom: 15px;
+      }
+
+      .order-number {
+        font-size: 1.8rem;
+      }
+
+      .order-label {
+        font-size: 0.61rem;
+      }
+
+      .order-card h3 {
+        margin-bottom: 11px;
+
+        font-size: 1.5rem;
+
+        line-height: 1.08;
+      }
+
+      .order-card p {
+        font-size: 0.82rem;
+
+        line-height: 1.55;
+      }
+
+      .order-card-link {
+        margin-top: 12px;
+
+        font-size: 0.79rem;
+      }
+
+      .orders-cta {
+        margin-top: 22px;
+
+        gap: 16px;
+
+        padding: 22px 20px;
+
+        border-radius: 10px;
+      }
+
+      .orders-cta-text {
+        gap: 5px;
+      }
+
+      .orders-cta-text strong {
+        font-size: 1.22rem;
+
+        line-height: 1.25;
+      }
+
+      .orders-cta-text span {
+        font-size: 0.82rem;
+
+        line-height: 1.55;
+      }
+
+      .orders-cta .btn {
+        min-height: 48px;
+
+        font-size: 0.82rem;
+      }
+
+
+      /* =====================================
+         BENEFÍCIOS MAIS COMPACTOS
+      ====================================== */
+
+      .benefits {
+        padding: 30px 0;
+      }
+
+      .benefits-grid {
+        gap: 20px;
+      }
+
+      .benefit-item {
+        gap: 12px;
+      }
+
+      .benefit-icon {
+        width: 30px;
+
+        font-size: 1.2rem;
+
+        text-align: center;
+      }
+
+      .benefit-item h3 {
+        margin-bottom: 3px;
+
+        font-size: 0.91rem;
+      }
+
+      .benefit-item p {
+        font-size: 0.78rem;
+
+        line-height: 1.5;
+      }
+
+
+      /* =====================================
+         SOBRE NA HOME
+         TEXTO PRIMEIRO + VÍDEO COMPACTO
+      ====================================== */
+
+      #sobre {
+        padding-top: 50px;
+        padding-bottom: 50px;
+      }
+
+      #sobre .about-grid {
+        display: flex;
+
+        flex-direction: column;
+
+        gap: 25px;
+      }
+
+      #sobre .about-content {
+        order: 1;
+
+        max-width: none;
+      }
+
+      #sobre .about-video-wrapper {
+        order: 2;
+
+        width: 100%;
+        max-width: 100%;
+
+        min-height: 0;
+        height: 265px;
+
+        margin: 0;
+
+        border-radius: 10px;
+      }
+
+      #sobre .about-video {
+        width: 100%;
+        height: 100%;
+
+        object-fit: cover;
+        object-position: center;
+      }
+
+      #sobre .about-content .eyebrow {
+        margin-bottom: 10px;
+      }
+
+      #sobre .about-content h2 {
+        margin-bottom: 15px;
+
+        font-size: 2.45rem;
+
+        line-height: 1.06;
+      }
+
+      #sobre .about-content p {
+        margin-bottom: 11px;
+
+        font-size: 0.89rem;
+
+        line-height: 1.6;
+      }
+
+      #sobre .about-content .btn {
+        width: 100%;
+
+        min-height: 48px;
+
+        margin-top: 10px;
+      }
+
+
+      /* =====================================
+         SÍTIO ARUÁ
+         TEXTO PRIMEIRO + FOTO MENOR
+      ====================================== */
+
+      .arua-section {
+        padding-top: 50px;
+        padding-bottom: 50px;
+      }
+
+      .arua-section .about-grid {
+        display: flex;
+
+        flex-direction: column;
+
+        gap: 24px;
+      }
+
+      .arua-section .about-content {
+        order: 1;
+
+        max-width: none;
+      }
+
+      .arua-section .about-image-wrapper {
+        order: 2;
+
+        width: 100%;
+
+        min-height: 0;
+        height: 270px;
+
+        margin: 0;
+
+        border-radius: 10px;
+      }
+
+      .arua-section .about-image {
+        width: 100%;
+        height: 100%;
+
+        object-fit: cover;
+        object-position: center;
+      }
+
+      .arua-section .about-content .eyebrow {
+        margin-bottom: 10px;
+      }
+
+      .arua-section .about-content h2 {
+        margin-bottom: 15px;
+
+        font-size: 2.4rem;
+
+        line-height: 1.06;
+      }
+
+      .arua-section .about-content p {
+        margin-bottom: 10px;
+
+        font-size: 0.89rem;
+
+        line-height: 1.58;
+      }
+
+      .arua-section .about-content .btn {
+        width: 100%;
+
+        min-height: 48px;
+
+        margin-top: 9px;
+      }
+
+
+      /* =====================================
+         CTA FINAL MAIS CURTO
+      ====================================== */
+
+      .final-cta {
+        padding: 62px 0;
+      }
+
+      .final-cta .eyebrow {
+        margin-bottom: 12px;
+      }
+
+      .final-cta h2 {
+        margin-bottom: 14px;
+
+        font-size: 2.55rem;
+
+        line-height: 1.05;
+      }
+
+      .final-cta p {
+        max-width: 92%;
+
+        margin-bottom: 22px;
+
+        font-size: 0.9rem;
+
+        line-height: 1.6;
+      }
+
+      .final-cta .btn {
+        width: min(100%, 330px);
+
+        min-height: 48px;
+      }
+
+
+      /* =====================================
+         FOOTER MAIS CURTO
+      ====================================== */
+
+      .footer {
+        padding: 40px 0 18px;
+      }
+
+      .footer-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+
+        gap: 26px 20px;
+
+        padding-bottom: 28px;
+      }
+
+      .footer-brand {
+        grid-column: 1 / -1;
+      }
+
+      .footer-logo {
+        width: 215px;
+
+        margin-left: -5px;
+        margin-bottom: 11px;
+      }
+
+      .footer-brand p {
+        max-width: 100%;
+
+        font-size: 0.77rem;
+
+        line-height: 1.52;
+      }
+
+      .footer-column {
+        gap: 7px;
+      }
+
+      .footer-column h3 {
+        margin-bottom: 3px;
+
+        font-size: 0.69rem;
+      }
+
+      .footer-column a,
+      .footer-column p {
+        font-size: 0.75rem;
+
+        line-height: 1.45;
+      }
+
+      .footer-column:last-child {
+        grid-column: 1 / -1;
+
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+
+        gap: 8px 18px;
+      }
+
+      .footer-column:last-child h3 {
+        flex: 0 0 100%;
+      }
+
+      .footer-bottom {
+        padding-top: 17px;
+      }
+
+      .footer-bottom p {
+        font-size: 0.69rem;
+      }
+
+
+      /* =====================================
+         WHATSAPP FLUTUANTE MENOR
+      ====================================== */
+
+      .floating-whatsapp {
+        right: 14px;
+        bottom: 16px;
+
+        width: 50px;
+        height: 50px;
+      }
+
+      .floating-whatsapp svg {
+        width: 33px;
+        height: 33px;
+      }
+
+    }
+
+  </style>
+
+
+</head>
+
+
+<body>
+
+
+  <!-- =====================================
+       HEADER
+  ====================================== -->
+
+  <header class="header">
+
+    <div class="container header-container">
+
+      <a
+        href="index.html"
+        class="logo-link"
+        aria-label="Muryponário - Página inicial"
+      >
+
+        <img
+          src="imagens/logo-muryponario.png"
+          alt="Muryponário"
+          class="logo"
+        >
+
+      </a>
+
+
+      <nav
+        class="nav"
+        id="nav"
+      >
+
+        <a
+          href="index.html"
+          class="nav-link active"
+        >
+          Início
+        </a>
+
+        <a
+          href="produtos.html"
+          class="nav-link"
+        >
+          Produtos
+        </a>
+
+        <a
+          href="#encomendas"
+          class="nav-link"
+        >
+          Encomendas
+        </a>
+
+        <a
+          href="sobre.html"
+          class="nav-link"
+        >
+          Sobre
+        </a>
+
+        <a
+          href="contato.html"
+          class="nav-link"
+        >
+          Contato
+        </a>
+
+      </nav>
+
+
+      <a
+        href="#"
+        class="btn btn-whatsapp header-whatsapp js-whatsapp"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Falar no WhatsApp
+      </a>
+
+
+      <button
+        class="menu-toggle"
+        id="menuToggle"
+        aria-label="Abrir menu"
+        aria-expanded="false"
+      >
+
+        <span></span>
+        <span></span>
+        <span></span>
+
+      </button>
+
+    </div>
+
+  </header>
+
+
+  <main>
+
+
+    <!-- =====================================
+         HERO
+    ====================================== -->
+
+    <section class="hero">
+
+      <img
+        src="imagens/hero-muryponario.png"
+        alt="Mel, favo de mel e flores representando a essência da Muryponário"
+        class="hero-image"
+      >
+
+      <div class="hero-overlay"></div>
+
+
+      <div class="container hero-content">
+
+        <div class="hero-text">
+
+          <span class="eyebrow hero-eyebrow">
+            Cera • Mel • Própolis
+          </span>
+
+
+          <h1>
+            Beleza natural<br>
+            direto da colmeia.
+          </h1>
+
+
+          <p class="hero-description">
+            Produtos feitos à base de cera, mel e própolis,
+            desenvolvidos para transformar o cuidado do dia a dia
+            através da riqueza da colmeia.
+          </p>
+
+
+          <div class="hero-buttons">
+
+            <a
+              href="#"
+              class="btn btn-whatsapp js-whatsapp"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Fale conosco no WhatsApp
+            </a>
+
+
+            <a
+              href="produtos.html"
+              class="btn btn-secondary"
+            >
+              Conheça os produtos
+            </a>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =====================================
+         CERA / MEL / PRÓPOLIS
+    ====================================== -->
+
+    <section class="brand-formula">
+
+      <div class="container brand-formula-content">
+
+        <div class="formula-item">
+
+          <span class="formula-icon">
+            ✦
+          </span>
+
+          <div>
+
+            <strong>
+              Cera
+            </strong>
+
+            <span>
+              A riqueza da colmeia em cada detalhe.
+            </span>
+
+          </div>
+
+        </div>
+
+
+        <div class="formula-item">
+
+          <span class="formula-icon">
+            ◇
+          </span>
+
+          <div>
+
+            <strong>
+              Mel
+            </strong>
+
+            <span>
+              Um dos principais símbolos da Muryponário.
+            </span>
+
+          </div>
+
+        </div>
+
+
+        <div class="formula-item">
+
+          <span class="formula-icon">
+            ✺
+          </span>
+
+          <div>
+
+            <strong>
+              Própolis
+            </strong>
+
+            <span>
+              Presente na essência dos nossos produtos.
+            </span>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =====================================
+         NOSSOS PRODUTOS
+    ====================================== -->
+
+    <section class="section products-highlight">
+
+      <div class="container">
+
+        <div class="section-heading">
+
+          <span class="eyebrow">
+            Conheça a Muryponário
+          </span>
+
+          <h2>
+            Nossos produtos
+          </h2>
+
+          <p>
+            Conheça nossas principais linhas e descubra
+            diferentes formas de levar a essência da colmeia
+            para o seu dia a dia.
+          </p>
+
+        </div>
+
+
+        <p class="mobile-swipe-hint">
+          Deslize para ver mais →
+        </p>
+
+
+        <div class="product-grid home-products home-products-three">
+
+
+          <!-- =====================================
+               BELEZA & AUTOCUIDADO
+          ====================================== -->
+
+          <article class="product-card">
+
+            <div class="product-image-wrapper">
+
+              <img
+                src="imagens/beleza-autocuidado.jpg"
+                alt="Produtos da linha Beleza e Autocuidado Muryponário"
+                class="product-image"
+                loading="lazy"
+              >
+
+            </div>
+
+
+            <div class="product-info">
+
+              <span class="product-category">
+                Beleza & Autocuidado
+              </span>
+
+              <h3>
+                Beleza & Autocuidado
+              </h3>
+
+              <p>
+                Cuidados para pele, lábios e rotina de beleza,
+                desenvolvidos com ingredientes inspirados
+                na riqueza da colmeia.
+              </p>
+
+              <a
+                href="produtos.html?categoria=beleza"
+                class="product-link"
+              >
+                Conhecer produtos
+              </a>
+
+            </div>
+
+          </article>
+
+
+          <!-- =====================================
+               CUIDADOS ESPECIAIS
+          ====================================== -->
+
+          <article class="product-card">
+
+            <div class="product-image-wrapper">
+
+              <img
+                src="imagens/cuidados-especiais.jpg"
+                alt="Produtos da linha Cuidados Especiais Muryponário"
+                class="product-image"
+                loading="lazy"
+              >
+
+            </div>
+
+
+            <div class="product-info">
+
+              <span class="product-category">
+                Cuidados Especiais
+              </span>
+
+              <h3>
+                Cuidados Especiais
+              </h3>
+
+              <p>
+                Produtos desenvolvidos para diferentes cuidados
+                do dia a dia, combinando cera de abelha,
+                própolis e outros ingredientes selecionados.
+              </p>
+
+              <a
+                href="produtos.html?categoria=cuidados"
+                class="product-link"
+              >
+                Conhecer produtos
+              </a>
+
+            </div>
+
+          </article>
+
+
+          <!-- =====================================
+               COLMEIA & NATUREZA
+          ====================================== -->
+
+          <article class="product-card">
+
+            <div class="product-image-wrapper">
+
+              <img
+                src="imagens/colmeia-natureza.jpg"
+                alt="Mel puro Muryponário"
+                class="product-image"
+                loading="lazy"
+              >
+
+            </div>
+
+
+            <div class="product-info">
+
+              <span class="product-category">
+                Colmeia & Natureza
+              </span>
+
+              <h3>
+                Colmeia & Natureza
+              </h3>
+
+              <p>
+                Mel, velas, própolis e outros produtos
+                que levam a essência da colmeia para
+                diferentes momentos do dia a dia.
+              </p>
+
+              <a
+                href="produtos.html?categoria=colmeia"
+                class="product-link"
+              >
+                Conhecer produtos
+              </a>
+
+            </div>
+
+          </article>
+
+        </div>
+
+
+        <div class="section-button">
+
+          <a
+            href="produtos.html"
+            class="btn btn-gold"
+          >
+            Ver todos os produtos
+          </a>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =====================================
+         ENCOMENDAS
+    ====================================== -->
+
+    <section
+      class="section orders-section"
+      id="encomendas"
+    >
+
+      <div class="container">
+
+        <div class="orders-header">
+
+          <div>
+
+            <span class="eyebrow">
+              Encomendas especiais
+            </span>
+
+            <h2>
+              Produtos feitos para<br>
+              momentos especiais.
+            </h2>
+
+          </div>
+
+
+          <div class="orders-intro">
+
+            <p>
+              A Muryponário também trabalha com encomendas
+              e pedidos em quantidade para empresas,
+              hospedagens, eventos e celebrações.
+            </p>
+
+            <p>
+              Entre em contato e consulte formatos,
+              quantidades e possibilidades para o seu projeto.
+            </p>
+
+          </div>
+
+        </div>
+
+
+        <p class="mobile-swipe-hint">
+          Deslize para ver mais →
+        </p>
+
+
+        <div class="orders-grid">
+
+
+          <!-- =====================================
+               HOTÉIS
+          ====================================== -->
+
+          <article class="order-card">
+
+            <div class="order-card-image-wrapper">
+
+              <img
+                src="imagens/encomenda-hoteis.jpg"
+                alt="Mini sabonetes artesanais para hotéis e pousadas"
+                class="order-card-image"
+                loading="lazy"
+              >
+
+            </div>
+
+
+            <div class="order-card-content">
+
+              <div class="order-card-top">
+
+                <span class="order-number">
+                  01
+                </span>
+
+                <span class="order-label">
+                  Hotéis & Pousadas
+                </span>
+
+              </div>
+
+
+              <h3>
+                Mini sabonetes para seus hóspedes.
+              </h3>
+
+
+              <p>
+                A Muryponário produz mini sabonetes artesanais
+                para hotéis e pousadas, levando um detalhe especial
+                e delicado para a experiência dos hóspedes.
+              </p>
+
+
+              <a
+                href="#"
+                class="order-card-link js-whatsapp-order-detail"
+                data-order="Hotéis & Pousadas"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Saiba mais
+                <span aria-hidden="true">→</span>
+              </a>
+
+            </div>
+
+          </article>
+
+
+          <!-- =====================================
+               CHÁ DE BEBÊ
+          ====================================== -->
+
+          <article class="order-card">
+
+            <div class="order-card-image-wrapper">
+
+              <img
+                src="imagens/encomenda-cha-bebe.jpg"
+                alt="Lembranças artesanais para chá de bebê"
+                class="order-card-image"
+                loading="lazy"
+              >
+
+            </div>
+
+
+            <div class="order-card-content">
+
+              <div class="order-card-top">
+
+                <span class="order-number">
+                  02
+                </span>
+
+                <span class="order-label">
+                  Chá de Bebê
+                </span>
+
+              </div>
+
+
+              <h3>
+                Lembranças para celebrar uma nova chegada.
+              </h3>
+
+
+              <p>
+                Criamos lembranças artesanais para chá de bebê,
+                transformando produtos da Muryponário em pequenos
+                presentes especiais para familiares e convidados.
+              </p>
+
+
+              <a
+                href="#"
+                class="order-card-link js-whatsapp-order-detail"
+                data-order="Chá de Bebê"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Saiba mais
+                <span aria-hidden="true">→</span>
+              </a>
+
+            </div>
+
+          </article>
+
+
+          <!-- =====================================
+               ANIVERSÁRIOS
+          ====================================== -->
+
+          <article class="order-card">
+
+            <div class="order-card-image-wrapper">
+
+              <img
+                src="imagens/encomenda-aniversario.jpg"
+                alt="Lembranças artesanais para aniversários"
+                class="order-card-image"
+                loading="lazy"
+              >
+
+            </div>
+
+
+            <div class="order-card-content">
+
+              <div class="order-card-top">
+
+                <span class="order-number">
+                  03
+                </span>
+
+                <span class="order-label">
+                  Aniversários
+                </span>
+
+              </div>
+
+
+              <h3>
+                Lembranças para momentos especiais
+              </h3>
+
+
+              <p>
+                Para aniversários e outras celebrações,
+                produzimos lembranças especiais em diferentes formatos,
+                criando um presente delicado para cada convidado.
+              </p>
+
+
+              <a
+                href="#"
+                class="order-card-link js-whatsapp-order-detail"
+                data-order="Aniversários"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Saiba mais
+                <span aria-hidden="true">→</span>
+              </a>
+
+            </div>
+
+          </article>
+
+        </div>
+
+
+        <!-- =====================================
+             CTA PARA OUTRAS IDEIAS
+        ====================================== -->
+
+        <div class="orders-cta">
+
+          <div class="orders-cta-text">
+
+            <strong>
+              Tem alguma ideia? Vamos criar juntos.
+            </strong>
+
+            <span>
+              Tem uma proposta diferente ou pensou em uma lembrança especial?
+              Entre em contato conosco e conte a sua ideia.
+              Vamos conversar sobre as possibilidades.
+            </span>
+
+          </div>
+
+
+          <a
+            href="#"
+            class="btn btn-whatsapp js-whatsapp-order"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Falar sobre minha ideia
+          </a>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =====================================
+         BENEFÍCIOS
+    ====================================== -->
+
+    <section class="benefits">
+
+      <div class="container benefits-grid">
+
+        <div class="benefit-item">
+
+          <span class="benefit-icon">
+            ✦
+          </span>
+
+          <div>
+
+            <h3>
+              Essência da colmeia
+            </h3>
+
+            <p>
+              Nossa linha é desenvolvida à base
+              de cera, mel e própolis.
+            </p>
+
+          </div>
+
+        </div>
+
+
+        <div class="benefit-item">
+
+          <span class="benefit-icon">
+            ♡
+          </span>
+
+          <div>
+
+            <h3>
+              Cuidado em cada produto
+            </h3>
+
+            <p>
+              Uma linha diversificada para diferentes
+              momentos e necessidades do dia a dia.
+            </p>
+
+          </div>
+
+        </div>
+
+
+        <div class="benefit-item">
+
+          <span class="benefit-icon">
+            ☼
+          </span>
+
+          <div>
+
+            <h3>
+              Atendimento pelo WhatsApp
+            </h3>
+
+            <p>
+              Fale diretamente conosco para conhecer
+              melhor cada produto Muryponário.
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =====================================
+         SOBRE / VÍDEO
+    ====================================== -->
+
+    <section
+      class="section about-section"
+      id="sobre"
+    >
+
+      <div class="container about-grid">
+
+
+        <div class="about-image-wrapper about-video-wrapper">
+
+          <video
+            class="about-video"
+            autoplay
+            muted
+            loop
+            playsinline
+            preload="metadata"
+            poster="imagens/sobre-muryponario.jpg"
+            aria-label="Vídeo da colmeia da Muryponário"
+          >
+
+            <source
+              src="videos/muryponario-colmeia.mp4"
+              type="video/mp4"
+            >
+
+            Seu navegador não suporta vídeos em HTML5.
+
+          </video>
+
+        </div>
+
+
+        <div class="about-content">
+
+          <span class="eyebrow">
+            Nossa essência
+          </span>
+
+
+          <h2>
+            Da colmeia para
+            o seu dia a dia.
+          </h2>
+
+
+          <p>
+            A Muryponário nasceu da conexão com as abelhas,
+            com a natureza e com tudo o que a colmeia
+            pode proporcionar.
+          </p>
+
+
+          <p>
+            Todos os nossos produtos são feitos à base
+            de cera, mel e própolis, elementos que fazem
+            parte da identidade e da essência da marca.
+          </p>
+
+
+          <p>
+            Nossa linha reúne produtos para beleza,
+            autocuidado, cuidados especiais, pets,
+            casa e natureza.
+          </p>
+
+
+          <a
+            href="sobre.html"
+            class="btn btn-gold"
+          >
+            Conheça nossa história
+          </a>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =====================================
+         SÍTIO ARUÁ
+    ====================================== -->
+
+    <section class="section about-section arua-section">
+
+      <div class="container about-grid">
+
+        <div class="about-image-wrapper">
+
+          <img
+            src="imagens/geleia-sitio-arua.jpg"
+            alt="Geleias artesanais do Sítio Aruá"
+            class="about-image"
+            loading="lazy"
+          >
+
+        </div>
+
+
+        <div class="about-content">
+
+          <span class="eyebrow">
+            Uma indicação especial
+          </span>
+
+
+          <h2>
+            Geleias artesanais<br>
+            do Sítio Aruá.
+          </h2>
+
+
+          <p>
+            Feitas artesanalmente com frutas selecionadas
+            do Sítio Aruá e preparadas no fogão a lenha,
+            as geleias carregam o sabor e o carinho do interior.
+          </p>
+
+
+          <p>
+            Uma receita caseira, sem conservantes,
+            com textura natural e aquele gostinho
+            que traz boas lembranças.
+          </p>
+
+
+          <p>
+            Consulte os sabores disponíveis e experimente
+            um pouco do Sítio Aruá.
+          </p>
+
+
+          <p class="arua-disclaimer">
+            Produção independente do Sítio Aruá.
+          </p>
+
+
+          <a
+            href="https://wa.me/5522981312350?text=Olá!%20Vim%20pelo%20site%20da%20Muryponário%20e%20gostaria%20de%20consultar%20os%20sabores%20de%20geleia%20disponíveis"
+            class="btn btn-gold"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Consultar sabores
+          </a>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =====================================
+         CTA FINAL
+    ====================================== -->
+
+    <section class="final-cta">
+
+      <div class="container final-cta-content">
+
+        <span class="eyebrow eyebrow-light">
+          Muryponário
+        </span>
+
+        <h2>
+          Descubra o cuidado<br>
+          que vem da colmeia.
+        </h2>
+
+        <p>
+          Produtos feitos à base de cera, mel e própolis.
+          Fale conosco e conheça toda a linha Muryponário.
+        </p>
+
+        <a
+          href="#"
+          class="btn btn-light js-whatsapp"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Falar no WhatsApp
+        </a>
+
+      </div>
+
+    </section>
+
+
+  </main>
+
+
+  <!-- =====================================
+       FOOTER
+  ====================================== -->
+
+  <footer
+    class="footer"
+    id="contato"
+  >
+
+    <div class="container footer-grid">
+
+      <div class="footer-brand">
+
+        <img
+          src="imagens/logo-muryponario-branco.png"
+          alt="Muryponário"
+          class="footer-logo"
+        >
+
+        <p>
+          Produtos feitos à base de cera, mel e própolis
+          para beleza, autocuidado, cuidados especiais,
+          pets, casa e natureza.
+        </p>
+
+      </div>
+
+
+      <div class="footer-column">
+
+        <h3>
+          Navegação
+        </h3>
+
+        <a href="index.html">
+          Início
+        </a>
+
+        <a href="produtos.html">
+          Produtos
+        </a>
+
+        <a href="#encomendas">
+          Encomendas
+        </a>
+
+        <a href="sobre.html">
+          Sobre
+        </a>
+
+        <a href="contato.html">
+          Contato
+        </a>
+
+      </div>
+
+
+      <div class="footer-column">
+
+        <h3>
+          Produtos
+        </h3>
+
+        <a href="produtos.html?categoria=beleza">
+          Beleza & Autocuidado
+        </a>
+
+        <a href="produtos.html?categoria=cuidados">
+          Cuidados Especiais
+        </a>
+
+        <a href="produtos.html?categoria=colmeia">
+          Colmeia & Natureza
+        </a>
+
+      </div>
+
+
+      <div class="footer-column">
+
+        <h3>
+          Contato
+        </h3>
+
+        <a
+          href="#"
+          class="js-whatsapp"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          WhatsApp
+        </a>
+
+        <a
+          href="https://www.instagram.com/muryponario/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Instagram
+        </a>
+
+        <p>
+          Nova Friburgo - RJ
+        </p>
+
+      </div>
+
+    </div>
+
+
+    <div class="container footer-bottom">
+
+      <p>
+        © <span id="currentYear"></span>
+        Muryponário. Todos os direitos reservados.
+      </p>
+
+    </div>
+
+  </footer>
+
+
+  <!-- =====================================
+       WHATSAPP FLUTUANTE
+  ====================================== -->
+
+  <a
+    href="#"
+    class="floating-whatsapp js-whatsapp"
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="Falar com a Muryponário pelo WhatsApp"
+  >
+
+    <svg
+      viewBox="0 0 64 64"
+      aria-hidden="true"
+      focusable="false"
+    >
+
+      <path
+        class="whatsapp-bubble"
+        d="M32 7.5C18.4 7.5 7.5 18.1 7.5 31.2c0 4.7 1.4 9.1 4 12.8L8.5 56.5l12.8-3.3c3.3 1.6 6.9 2.5 10.7 2.5 13.6 0 24.5-10.7 24.5-24.5S45.6 7.5 32 7.5Z"
+      />
+
+      <path
+        class="whatsapp-phone"
+        d="M23.1 19.7c.7-.7 1.8-.8 2.6-.3l3.7 2.4c.9.6 1.2 1.7.8 2.7l-1.7 4.1c-.3.7-.1 1.5.4 2.1 1.8 2.2 3.8 4.1 6.1 5.7.6.4 1.4.5 2.1.2l3.9-1.9c1-.5 2.1-.2 2.8.6l2.6 3.5c.6.8.5 1.9-.2 2.7l-2.2 2.4c-1.6 1.7-4 2.4-6.2 1.8-9.7-2.6-17.3-9.8-20.5-19.2-.8-2.3-.2-4.8 1.4-6.5l2.4-2.3Z"
+      />
+
+    </svg>
+
+  </a>
+
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>

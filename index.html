@@ -11,12 +11,12 @@
   >
 
   <title>
-    Muryponário | Produtos à base de cera, mel e própolis
+    Muryponário | Beleza natural direto da colmeia
   </title>
 
   <meta
     name="description"
-    content="Conheça a Muryponário. Produtos feitos à base de cera, mel e própolis para beleza, autocuidado, cuidados especiais, pets, casa e natureza. Também aceitamos encomendas especiais."
+    content="Produtos feitos à base de cera, mel e própolis para beleza, autocuidado, cuidados especiais, pets, casa e natureza."
   >
 
   <meta
@@ -43,6 +43,7 @@
 
   <!-- =====================================
        OPEN GRAPH
+       WHATSAPP / FACEBOOK / LINKEDIN
   ====================================== -->
 
   <meta
@@ -71,8 +72,28 @@
   >
 
   <meta
+    property="og:url"
+    content="https://muryponario.pages.dev/"
+  >
+
+  <meta
     property="og:image"
-    content="https://SEU-DOMINIO.com.br/imagens/muryponario-compartilhamento.jpg"
+    content="https://muryponario.pages.dev/imagens/muryponario-compartilhamento.jpg"
+  >
+
+  <meta
+    property="og:image:secure_url"
+    content="https://muryponario.pages.dev/imagens/muryponario-compartilhamento.jpg"
+  >
+
+  <meta
+    property="og:image:type"
+    content="image/jpeg"
+  >
+
+  <meta
+    property="og:image:alt"
+    content="Muryponário - Beleza natural direto da colmeia"
   >
 
 
@@ -97,7 +118,12 @@
 
   <meta
     name="twitter:image"
-    content="https://SEU-DOMINIO.com.br/imagens/muryponario-compartilhamento.jpg"
+    content="https://muryponario.pages.dev/imagens/muryponario-compartilhamento.jpg"
+  >
+
+  <meta
+    name="twitter:image:alt"
+    content="Muryponário - Beleza natural direto da colmeia"
   >
 
 
@@ -134,7 +160,7 @@
 
   <!-- =====================================
        AJUSTES EXCLUSIVOS DO INDEX NO MOBILE
-       Desktop permanece inalterado
+       DESKTOP PERMANECE INALTERADO
   ====================================== -->
 
   <style>
@@ -142,6 +168,7 @@
     .mobile-swipe-hint {
       display: none;
     }
+
 
     @media (max-width: 650px) {
 
@@ -182,7 +209,9 @@
       .nav.mobile-open .nav-link {
         width: 100%;
         padding: 11px 0;
-        border-bottom: 1px solid rgba(166, 120, 8, 0.10);
+
+        border-bottom:
+          1px solid rgba(166, 120, 8, 0.10);
       }
 
 
@@ -204,43 +233,59 @@
 
       .hero-text {
         width: 100%;
+
         padding: 195px 0 0;
       }
 
       .hero-eyebrow {
         margin-bottom: 13px;
+
         padding: 6px 11px;
+
         font-size: 0.66rem;
       }
 
       .hero h1 {
         margin-bottom: 15px;
-        font-size: clamp(2.65rem, 11vw, 3.25rem);
+
+        font-size:
+          clamp(
+            2.65rem,
+            11vw,
+            3.25rem
+          );
+
         line-height: 1.02;
       }
 
       .hero-description {
         max-width: 100%;
+
         font-size: 0.91rem;
+
         line-height: 1.58;
       }
 
       .hero-buttons {
         gap: 8px;
+
         margin-top: 20px;
       }
 
       .hero-buttons .btn {
-        min-height: 46px;
         width: 100%;
-        padding: 0 17px;
+
+        min-height: 46px;
+
+        padding:
+          0 17px;
+
         font-size: 0.82rem;
       }
 
 
       /* =====================================
          CERA / MEL / PRÓPOLIS
-         UMA FAIXA COMPACTA
       ====================================== */
 
       .brand-formula {
@@ -248,27 +293,37 @@
       }
 
       .brand-formula-content {
-        grid-template-columns: repeat(3, minmax(0, 1fr));
+        grid-template-columns:
+          repeat(3, minmax(0, 1fr));
+
         gap: 0;
       }
 
       .formula-item {
         min-width: 0;
+
         flex-direction: column;
         justify-content: center;
+
         gap: 7px;
-        padding: 0 9px;
+
+        padding:
+          0 9px;
+
         text-align: center;
       }
 
       .formula-item:not(:last-child) {
-        border-right: 1px solid rgba(166, 120, 8, 0.14);
+        border-right:
+          1px solid rgba(166, 120, 8, 0.14);
       }
 
       .formula-icon {
         width: 34px;
         height: 34px;
+
         flex-basis: 34px;
+
         font-size: 0.96rem;
       }
 
@@ -299,15 +354,20 @@
 
       .section-heading h2 {
         margin-bottom: 12px;
+
         font-size: 2.45rem;
+
         line-height: 1.06;
       }
 
       .section-heading p {
         max-width: 95%;
+
         margin-left: auto;
         margin-right: auto;
+
         font-size: 0.9rem;
+
         line-height: 1.6;
       }
 
@@ -318,11 +378,18 @@
 
       .mobile-swipe-hint {
         display: block;
-        margin: -9px 0 14px;
-        color: var(--gold-dark);
+
+        margin:
+          -9px 0 14px;
+
+        color:
+          var(--gold-dark);
+
         font-size: 0.7rem;
         font-weight: 700;
+
         letter-spacing: 0.07em;
+
         text-align: right;
         text-transform: uppercase;
       }
@@ -330,7 +397,7 @@
 
       /* =====================================
          NOSSOS PRODUTOS
-         CARROSSEL HORIZONTAL NATIVO
+         CARROSSEL HORIZONTAL
       ====================================== */
 
       .products-highlight {
@@ -339,16 +406,23 @@
 
       .home-products-three {
         display: flex;
+
         grid-template-columns: none;
+
         gap: 14px;
+
         max-width: none;
+
         margin: 0;
-        padding: 2px 10vw 12px 1px;
+
+        padding:
+          2px 10vw 12px 1px;
 
         overflow-x: auto;
         overflow-y: hidden;
 
         scroll-snap-type: x mandatory;
+
         scroll-padding-left: 1px;
 
         -webkit-overflow-scrolling: touch;
@@ -361,7 +435,8 @@
       }
 
       .home-products-three .product-card {
-        flex: 0 0 83%;
+        flex:
+          0 0 83%;
 
         scroll-snap-align: start;
 
@@ -382,7 +457,8 @@
       }
 
       .home-products-three .product-info {
-        padding: 19px 18px 21px;
+        padding:
+          19px 18px 21px;
       }
 
       .home-products-three .product-category {
@@ -408,8 +484,8 @@
 
         display: -webkit-box;
 
-        -webkit-line-clamp: 3;
         line-clamp: 3;
+        -webkit-line-clamp: 3;
 
         -webkit-box-orient: vertical;
 
@@ -435,7 +511,7 @@
 
       /* =====================================
          ENCOMENDAS
-         CARROSSEL HORIZONTAL NATIVO
+         CARROSSEL HORIZONTAL
       ====================================== */
 
       .orders-section {
@@ -476,12 +552,14 @@
 
         margin: 0;
 
-        padding: 2px 10vw 12px 1px;
+        padding:
+          2px 10vw 12px 1px;
 
         overflow-x: auto;
         overflow-y: hidden;
 
         scroll-snap-type: x mandatory;
+
         scroll-padding-left: 1px;
 
         -webkit-overflow-scrolling: touch;
@@ -495,7 +573,8 @@
 
       .order-card,
       .order-card:last-child {
-        flex: 0 0 84%;
+        flex:
+          0 0 84%;
 
         grid-column: auto;
 
@@ -520,7 +599,8 @@
       }
 
       .order-card-content {
-        padding: 19px 18px 21px;
+        padding:
+          19px 18px 21px;
       }
 
       .order-card-top {
@@ -560,7 +640,8 @@
 
         gap: 16px;
 
-        padding: 22px 20px;
+        padding:
+          22px 20px;
 
         border-radius: 10px;
       }
@@ -627,7 +708,6 @@
 
       /* =====================================
          SOBRE NA HOME
-         TEXTO PRIMEIRO + VÍDEO COMPACTO
       ====================================== */
 
       #sobre {
@@ -656,6 +736,7 @@
         max-width: 100%;
 
         min-height: 0;
+
         height: 265px;
 
         margin: 0;
@@ -668,6 +749,7 @@
         height: 100%;
 
         object-fit: cover;
+
         object-position: center;
       }
 
@@ -702,7 +784,6 @@
 
       /* =====================================
          SÍTIO ARUÁ
-         TEXTO PRIMEIRO + FOTO MENOR
       ====================================== */
 
       .arua-section {
@@ -730,6 +811,7 @@
         width: 100%;
 
         min-height: 0;
+
         height: 270px;
 
         margin: 0;
@@ -742,6 +824,7 @@
         height: 100%;
 
         object-fit: cover;
+
         object-position: center;
       }
 
@@ -775,7 +858,7 @@
 
 
       /* =====================================
-         CTA FINAL MAIS CURTO
+         CTA FINAL
       ====================================== */
 
       .final-cta {
@@ -805,7 +888,11 @@
       }
 
       .final-cta .btn {
-        width: min(100%, 330px);
+        width:
+          min(
+            100%,
+            330px
+          );
 
         min-height: 48px;
       }
@@ -816,19 +903,26 @@
       ====================================== */
 
       .footer {
-        padding: 40px 0 18px;
+        padding:
+          40px 0 18px;
       }
 
       .footer-grid {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
+        grid-template-columns:
+          repeat(
+            2,
+            minmax(0, 1fr)
+          );
 
-        gap: 26px 20px;
+        gap:
+          26px 20px;
 
         padding-bottom: 28px;
       }
 
       .footer-brand {
-        grid-column: 1 / -1;
+        grid-column:
+          1 / -1;
       }
 
       .footer-logo {
@@ -864,17 +958,20 @@
       }
 
       .footer-column:last-child {
-        grid-column: 1 / -1;
+        grid-column:
+          1 / -1;
 
         flex-direction: row;
         flex-wrap: wrap;
         align-items: center;
 
-        gap: 8px 18px;
+        gap:
+          8px 18px;
       }
 
       .footer-column:last-child h3 {
-        flex: 0 0 100%;
+        flex:
+          0 0 100%;
       }
 
       .footer-bottom {
@@ -906,7 +1003,6 @@
     }
 
   </style>
-
 
 </head>
 
@@ -1448,7 +1544,9 @@
                 rel="noopener noreferrer"
               >
                 Saiba mais
-                <span aria-hidden="true">→</span>
+                <span aria-hidden="true">
+                  →
+                </span>
               </a>
 
             </div>
@@ -1509,7 +1607,9 @@
                 rel="noopener noreferrer"
               >
                 Saiba mais
-                <span aria-hidden="true">→</span>
+                <span aria-hidden="true">
+                  →
+                </span>
               </a>
 
             </div>
@@ -1570,7 +1670,9 @@
                 rel="noopener noreferrer"
               >
                 Saiba mais
-                <span aria-hidden="true">→</span>
+                <span aria-hidden="true">
+                  →
+                </span>
               </a>
 
             </div>
@@ -2048,7 +2150,12 @@
   </a>
 
 
+  <!-- =====================================
+       JAVASCRIPT
+  ====================================== -->
+
   <script src="script.js"></script>
+
 
 </body>
 

@@ -191,6 +191,63 @@ if (
 
 
 /* ========================================
+   LINHA PROTEÇÃO
+   RECLASSIFICAR PRODUTOS
+======================================== */
+
+const protectionProducts = [
+
+  "Própolis de Abelha Nativa",
+
+  "Spray de Garganta",
+
+  "Extrato Aquoso de Própolis"
+
+];
+
+
+protectionProducts.forEach(
+  (productName) => {
+
+    const product =
+      document.querySelector(
+        `.catalog-product[data-sort-name="${productName}"]`
+      );
+
+
+    if (
+      !product
+    ) {
+
+      return;
+
+    }
+
+
+    product.dataset.category =
+      "cuidados";
+
+
+    const categoryLabel =
+      product.querySelector(
+        ".product-category"
+      );
+
+
+    if (
+      categoryLabel
+    ) {
+
+      categoryLabel.textContent =
+        "Proteção";
+
+    }
+
+  }
+);
+
+
+/* ========================================
    FILTROS DOS PRODUTOS
 ======================================== */
 
@@ -283,7 +340,23 @@ const productOrders = {
 
     "Meliderme",
 
+
+    /* =====================================
+       PROTEÇÃO
+    ====================================== */
+
+    "Própolis de Abelha Nativa",
+
+    "Spray de Garganta",
+
+    "Extrato Aquoso de Própolis",
+
     "Repelente de Própolis, Cravo e Canela",
+
+
+    /* =====================================
+       COLMEIA & NATUREZA
+    ====================================== */
 
     "Mel Puro Plástico",
 
@@ -293,9 +366,16 @@ const productOrders = {
 
     "Favo de Mel no Suporte",
 
-    "Própolis de Abelha Nativa",
+    "Composto de Mel e Própolis",
+
+    "Cera Bruta",
 
     "Atrativos de Abelhas Nativas",
+
+
+    /* =====================================
+       VELAS
+    ====================================== */
 
     "Hive Bee Color",
 
@@ -303,19 +383,20 @@ const productOrders = {
 
     "Zen Bee",
 
-    "Feng Bee",
+    "Design Bee",
+
+    "Diamond Bee",
 
     "Honey Touch",
 
     "Flow Bee",
 
-    "Divina Bee",
-
-    "Honey Hive",
-
-    "Diamond Bee",
-
     "Classic Bee",
+
+
+    /* =====================================
+       CASA & UTILIDADES
+    ====================================== */
 
     "Mini Presépio",
 
@@ -401,6 +482,17 @@ const productOrders = {
 
     "Cera Cure",
 
+
+    /* =====================================
+       PROTEÇÃO
+    ====================================== */
+
+    "Própolis de Abelha Nativa",
+
+    "Spray de Garganta",
+
+    "Extrato Aquoso de Própolis",
+
     "Repelente de Própolis, Cravo e Canela"
 
   ],
@@ -420,9 +512,16 @@ const productOrders = {
 
     "Favo de Mel no Suporte",
 
-    "Própolis de Abelha Nativa",
+    "Composto de Mel e Própolis",
+
+    "Cera Bruta",
 
     "Atrativos de Abelhas Nativas",
+
+
+    /* =====================================
+       VELAS
+    ====================================== */
 
     "Hive Bee Color",
 
@@ -430,19 +529,20 @@ const productOrders = {
 
     "Zen Bee",
 
-    "Feng Bee",
+    "Design Bee",
+
+    "Diamond Bee",
 
     "Honey Touch",
 
     "Flow Bee",
 
-    "Divina Bee",
-
-    "Honey Hive",
-
-    "Diamond Bee",
-
     "Classic Bee",
+
+
+    /* =====================================
+       CASA & UTILIDADES
+    ====================================== */
 
     "Mini Presépio",
 
@@ -854,6 +954,465 @@ footerFilterLinks.forEach(
         }
 
       }
+    );
+
+  }
+);
+
+
+/* ========================================
+   CARROSSEL DOS CARDS DE PRODUTO
+======================================== */
+
+const productCarousels =
+  document.querySelectorAll(
+    "[data-carousel]"
+  );
+
+
+productCarousels.forEach(
+  (carousel) => {
+
+    const slides =
+      Array.from(
+        carousel.querySelectorAll(
+          ".product-carousel-slide"
+        )
+      );
+
+
+    const dots =
+      Array.from(
+        carousel.querySelectorAll(
+          ".product-carousel-dot"
+        )
+      );
+
+
+    const previousButton =
+      carousel.querySelector(
+        ".product-carousel-prev"
+      );
+
+
+    const nextButton =
+      carousel.querySelector(
+        ".product-carousel-next"
+      );
+
+
+    if (
+      slides.length === 0
+    ) {
+
+      return;
+
+    }
+
+
+    let currentSlide =
+      slides.findIndex(
+        (slide) =>
+          slide.classList.contains(
+            "active"
+          )
+      );
+
+
+    if (
+      currentSlide < 0
+    ) {
+
+      currentSlide =
+        0;
+
+    }
+
+
+    let touchStartX =
+      null;
+
+
+    let touchStartY =
+      null;
+
+
+    const showSlide =
+      (index) => {
+
+        const totalSlides =
+          slides.length;
+
+
+        currentSlide =
+          (
+            index +
+            totalSlides
+          ) %
+          totalSlides;
+
+
+        slides.forEach(
+          (slide, slideIndex) => {
+
+            const isActive =
+              slideIndex ===
+              currentSlide;
+
+
+            slide.classList.toggle(
+              "active",
+              isActive
+            );
+
+
+            slide.setAttribute(
+              "aria-hidden",
+              isActive
+                ? "false"
+                : "true"
+            );
+
+          }
+        );
+
+
+        dots.forEach(
+          (dot, dotIndex) => {
+
+            const isActive =
+              dotIndex ===
+              currentSlide;
+
+
+            dot.classList.toggle(
+              "active",
+              isActive
+            );
+
+
+            dot.setAttribute(
+              "aria-current",
+              isActive
+                ? "true"
+                : "false"
+            );
+
+          }
+        );
+
+      };
+
+
+    const showPreviousSlide =
+      () => {
+
+        showSlide(
+          currentSlide - 1
+        );
+
+      };
+
+
+    const showNextSlide =
+      () => {
+
+        showSlide(
+          currentSlide + 1
+        );
+
+      };
+
+
+    if (
+      previousButton
+    ) {
+
+      previousButton.addEventListener(
+        "click",
+        (event) => {
+
+          event.preventDefault();
+
+          event.stopPropagation();
+
+
+          showPreviousSlide();
+
+        }
+      );
+
+    }
+
+
+    if (
+      nextButton
+    ) {
+
+      nextButton.addEventListener(
+        "click",
+        (event) => {
+
+          event.preventDefault();
+
+          event.stopPropagation();
+
+
+          showNextSlide();
+
+        }
+      );
+
+    }
+
+
+    dots.forEach(
+      (dot, dotIndex) => {
+
+        dot.addEventListener(
+          "click",
+          (event) => {
+
+            event.preventDefault();
+
+            event.stopPropagation();
+
+
+            const requestedSlide =
+              Number(
+                dot.dataset.slide
+              );
+
+
+            showSlide(
+              Number.isInteger(
+                requestedSlide
+              )
+                ? requestedSlide
+                : dotIndex
+            );
+
+          }
+        );
+
+      }
+    );
+
+
+    /* =====================================
+       TECLADO
+    ====================================== */
+
+    carousel.addEventListener(
+      "keydown",
+      (event) => {
+
+        if (
+          event.key ===
+          "ArrowLeft"
+        ) {
+
+          event.preventDefault();
+
+
+          showPreviousSlide();
+
+        }
+
+
+        if (
+          event.key ===
+          "ArrowRight"
+        ) {
+
+          event.preventDefault();
+
+
+          showNextSlide();
+
+        }
+
+      }
+    );
+
+
+    /* =====================================
+       SWIPE MOBILE
+    ====================================== */
+
+    carousel.addEventListener(
+      "touchstart",
+      (event) => {
+
+        if (
+          event.touches.length !==
+          1
+        ) {
+
+          return;
+
+        }
+
+
+        touchStartX =
+          event.touches[0].clientX;
+
+
+        touchStartY =
+          event.touches[0].clientY;
+
+      },
+      {
+        passive:
+          true
+      }
+    );
+
+
+    carousel.addEventListener(
+      "touchend",
+      (event) => {
+
+        if (
+          touchStartX === null ||
+          touchStartY === null ||
+          event.changedTouches.length === 0
+        ) {
+
+          return;
+
+        }
+
+
+        const touchEndX =
+          event.changedTouches[0].clientX;
+
+
+        const touchEndY =
+          event.changedTouches[0].clientY;
+
+
+        const differenceX =
+          touchEndX -
+          touchStartX;
+
+
+        const differenceY =
+          touchEndY -
+          touchStartY;
+
+
+        touchStartX =
+          null;
+
+
+        touchStartY =
+          null;
+
+
+        const minimumSwipeDistance =
+          40;
+
+
+        const isHorizontalSwipe =
+          Math.abs(
+            differenceX
+          ) >
+          Math.abs(
+            differenceY
+          );
+
+
+        if (
+          !isHorizontalSwipe ||
+          Math.abs(
+            differenceX
+          ) <
+          minimumSwipeDistance
+        ) {
+
+          return;
+
+        }
+
+
+        if (
+          differenceX < 0
+        ) {
+
+          showNextSlide();
+
+        } else {
+
+          showPreviousSlide();
+
+        }
+
+      },
+      {
+        passive:
+          true
+      }
+    );
+
+
+    /* =====================================
+       VERIFICAR IMAGENS AUSENTES
+    ====================================== */
+
+    slides.forEach(
+      (slide) => {
+
+        const image =
+          slide.querySelector(
+            ".product-image"
+          );
+
+
+        if (
+          !image
+        ) {
+
+          return;
+
+        }
+
+
+        const markImageAsMissing =
+          () => {
+
+            slide.classList.add(
+              "image-missing"
+            );
+
+        };
+
+
+        image.addEventListener(
+          "error",
+          markImageAsMissing
+        );
+
+
+        if (
+          image.complete &&
+          image.naturalWidth === 0
+        ) {
+
+          markImageAsMissing();
+
+        }
+
+      }
+    );
+
+
+    /* =====================================
+       INICIALIZAR CARROSSEL
+    ====================================== */
+
+    showSlide(
+      currentSlide
     );
 
   }

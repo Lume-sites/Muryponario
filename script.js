@@ -275,11 +275,6 @@ const productGrid =
 
 const productOrders = {
 
-
-  /* =====================================
-     TODOS
-  ====================================== */
-
   todos: [
 
     "Lip Bee",
@@ -340,11 +335,6 @@ const productOrders = {
 
     "Meliderme",
 
-
-    /* =====================================
-       PROTEÇÃO
-    ====================================== */
-
     "Própolis de Abelha Nativa",
 
     "Spray de Garganta",
@@ -352,11 +342,6 @@ const productOrders = {
     "Extrato Aquoso de Própolis",
 
     "Repelente de Própolis, Cravo e Canela",
-
-
-    /* =====================================
-       COLMEIA & NATUREZA
-    ====================================== */
 
     "Mel Puro Plástico",
 
@@ -371,11 +356,6 @@ const productOrders = {
     "Cera Bruta",
 
     "Atrativos de Abelhas Nativas",
-
-
-    /* =====================================
-       VELAS
-    ====================================== */
 
     "Hive Bee Color",
 
@@ -393,11 +373,6 @@ const productOrders = {
 
     "Classic Bee",
 
-
-    /* =====================================
-       CASA & UTILIDADES
-    ====================================== */
-
     "Mini Presépio",
 
     "Pano de Cera",
@@ -408,10 +383,6 @@ const productOrders = {
 
   ],
 
-
-  /* =====================================
-     BELEZA & AUTOCUIDADO
-  ====================================== */
 
   beleza: [
 
@@ -460,10 +431,6 @@ const productOrders = {
   ],
 
 
-  /* =====================================
-     CUIDADOS ESPECIAIS
-  ====================================== */
-
   cuidados: [
 
     "Pomada de Barbatimão",
@@ -482,11 +449,6 @@ const productOrders = {
 
     "Cera Cure",
 
-
-    /* =====================================
-       PROTEÇÃO
-    ====================================== */
-
     "Própolis de Abelha Nativa",
 
     "Spray de Garganta",
@@ -497,10 +459,6 @@ const productOrders = {
 
   ],
 
-
-  /* =====================================
-     COLMEIA & NATUREZA
-  ====================================== */
 
   colmeia: [
 
@@ -518,11 +476,6 @@ const productOrders = {
 
     "Atrativos de Abelhas Nativas",
 
-
-    /* =====================================
-       VELAS
-    ====================================== */
-
     "Hive Bee Color",
 
     "Hive Bee Natural",
@@ -538,11 +491,6 @@ const productOrders = {
     "Flow Bee",
 
     "Classic Bee",
-
-
-    /* =====================================
-       CASA & UTILIDADES
-    ====================================== */
 
     "Mini Presépio",
 
@@ -961,7 +909,7 @@ footerFilterLinks.forEach(
 
 
 /* ========================================
-   CARROSSEL DOS CARDS DE PRODUTO
+   CARROSSEL DOS CARDS
 ======================================== */
 
 const productCarousels =
@@ -1199,10 +1147,6 @@ productCarousels.forEach(
     );
 
 
-    /* =====================================
-       TECLADO
-    ====================================== */
-
     carousel.addEventListener(
       "keydown",
       (event) => {
@@ -1235,10 +1179,6 @@ productCarousels.forEach(
       }
     );
 
-
-    /* =====================================
-       SWIPE MOBILE
-    ====================================== */
 
     carousel.addEventListener(
       "touchstart",
@@ -1356,10 +1296,6 @@ productCarousels.forEach(
     );
 
 
-    /* =====================================
-       VERIFICAR IMAGENS AUSENTES
-    ====================================== */
-
     slides.forEach(
       (slide) => {
 
@@ -1385,7 +1321,7 @@ productCarousels.forEach(
               "image-missing"
             );
 
-        };
+          };
 
 
         image.addEventListener(
@@ -1407,10 +1343,6 @@ productCarousels.forEach(
     );
 
 
-    /* =====================================
-       INICIALIZAR CARROSSEL
-    ====================================== */
-
     showSlide(
       currentSlide
     );
@@ -1421,7 +1353,6 @@ productCarousels.forEach(
 
 /* ========================================
    VÍDEO DA ANDRÉIA
-   PLAYER PERSONALIZADO
 ======================================== */
 
 const storyVideo =
@@ -1441,11 +1372,6 @@ if (
   storyVideoCover
 ) {
 
-
-  /* =====================================
-     ESTADO INICIAL
-  ====================================== */
-
   storyVideo.controls =
     false;
 
@@ -1457,11 +1383,6 @@ if (
   storyVideo.pause();
 
 
-  /*
-    GARANTE QUE O VÍDEO COMECE
-    SEMPRE DO INÍCIO.
-  */
-
   try {
 
     storyVideo.currentTime =
@@ -1471,39 +1392,20 @@ if (
     error
   ) {
 
-    /* não faz nada */
-
   }
 
-
-  /* =====================================
-     CLIQUE NA CAPA
-  ====================================== */
 
   storyVideoCover.addEventListener(
     "click",
     async () => {
 
-
-      /*
-        PRIMEIRO ATIVAMOS OS CONTROLES.
-      */
-
       storyVideo.controls =
         true;
 
 
-      /*
-        O VÍDEO DA ANDRÉIA TEM SOM.
-      */
-
       storyVideo.muted =
         false;
 
-
-      /*
-        ESCONDE A CAPA.
-      */
 
       storyVideoCover.classList.add(
         "is-hidden"
@@ -1512,21 +1414,11 @@ if (
 
       try {
 
-        /*
-          COMEÇA O VÍDEO.
-        */
-
         await storyVideo.play();
 
       } catch (
         error
       ) {
-
-        /*
-          CASO O NAVEGADOR BLOQUEIE
-          A REPRODUÇÃO, VOLTA PARA
-          O ESTADO INICIAL.
-        */
 
         storyVideo.controls =
           false;
@@ -1542,47 +1434,21 @@ if (
   );
 
 
-  /* =====================================
-     QUANDO O VÍDEO TERMINAR
-  ====================================== */
-
   storyVideo.addEventListener(
     "ended",
     () => {
-
-
-      /*
-        1. A CAPA VOLTA PRIMEIRO.
-
-        Isso é importante porque impede
-        que o visitante veja o último
-        frame da Andréia.
-      */
 
       storyVideoCover.classList.remove(
         "is-hidden"
       );
 
 
-      /*
-        2. ESCONDE OS CONTROLES.
-      */
-
       storyVideo.controls =
         false;
 
 
-      /*
-        3. PAUSA O VÍDEO.
-      */
-
       storyVideo.pause();
 
-
-      /*
-        4. VOLTA O VÍDEO PARA O INÍCIO
-        ENQUANTO A CAPA JÁ ESTÁ POR CIMA.
-      */
 
       try {
 
@@ -1593,21 +1459,11 @@ if (
         error
       ) {
 
-        /* não faz nada */
-
       }
 
     }
   );
 
-
-  /* =====================================
-     SEGURANÇA EXTRA
-
-     Se o navegador considerar o vídeo
-     encerrado antes do evento "ended",
-     garantimos a volta da capa.
-  ====================================== */
 
   storyVideo.addEventListener(
     "timeupdate",
@@ -1628,10 +1484,6 @@ if (
     }
   );
 
-
-  /* =====================================
-     AO VOLTAR PARA O INÍCIO
-  ====================================== */
 
   storyVideo.addEventListener(
     "seeked",
@@ -1676,3 +1528,1700 @@ if (
     new Date().getFullYear();
 
 }
+
+
+/* ========================================
+   CARRINHO
+======================================== */
+
+const cartStorageKey =
+  "muryponarioCartV1";
+
+
+let cartItems = [];
+
+
+/* ========================================
+   CARREGAR
+======================================== */
+
+function cartLoad() {
+
+  try {
+
+    const storedCart =
+      localStorage.getItem(
+        cartStorageKey
+      );
+
+
+    if (
+      !storedCart
+    ) {
+
+      cartItems = [];
+
+      return;
+
+    }
+
+
+    const parsedCart =
+      JSON.parse(
+        storedCart
+      );
+
+
+    cartItems =
+      Array.isArray(
+        parsedCart
+      )
+        ? parsedCart
+        : [];
+
+  } catch (
+    error
+  ) {
+
+    cartItems = [];
+
+  }
+
+}
+
+
+/* ========================================
+   SALVAR
+======================================== */
+
+function cartSave() {
+
+  try {
+
+    localStorage.setItem(
+      cartStorageKey,
+      JSON.stringify(
+        cartItems
+      )
+    );
+
+  } catch (
+    error
+  ) {
+
+  }
+
+}
+
+
+/* ========================================
+   TOTAL
+======================================== */
+
+function cartGetTotalQuantity() {
+
+  return cartItems.reduce(
+    (
+      total,
+      item
+    ) => {
+
+      return (
+        total +
+        item.quantity
+      );
+
+    },
+    0
+  );
+
+}
+
+
+/* ========================================
+   ESCAPAR HTML
+======================================== */
+
+function cartEscapeHTML(
+  value
+) {
+
+  const div =
+    document.createElement(
+      "div"
+    );
+
+
+  div.textContent =
+    String(
+      value ?? ""
+    );
+
+
+  return div.innerHTML;
+
+}
+
+
+/* ========================================
+   IMAGEM
+======================================== */
+
+function cartNormalizeImage(
+  imageSource
+) {
+
+  if (
+    !imageSource
+  ) {
+
+    return "";
+
+  }
+
+
+  try {
+
+    return new URL(
+      imageSource,
+      window.location.href
+    ).href;
+
+  } catch (
+    error
+  ) {
+
+    return imageSource;
+
+  }
+
+}
+
+
+/* ========================================
+   INTERFACE
+======================================== */
+
+function cartCreateInterface() {
+
+  if (
+    document.getElementById(
+      "cartDrawer"
+    )
+  ) {
+
+    return;
+
+  }
+
+
+  const headerContainer =
+    document.querySelector(
+      ".header-container"
+    );
+
+
+  if (
+    headerContainer
+  ) {
+
+    const cartButton =
+      document.createElement(
+        "button"
+      );
+
+
+    cartButton.type =
+      "button";
+
+
+    cartButton.className =
+      "header-cart-button";
+
+
+    cartButton.id =
+      "headerCartButton";
+
+
+    cartButton.setAttribute(
+      "aria-label",
+      "Abrir carrinho"
+    );
+
+
+    cartButton.setAttribute(
+      "aria-controls",
+      "cartDrawer"
+    );
+
+
+    cartButton.setAttribute(
+      "aria-expanded",
+      "false"
+    );
+
+
+    cartButton.innerHTML = `
+      <svg
+        viewBox="0 0 24 24"
+        aria-hidden="true"
+        focusable="false"
+      >
+        <path
+          d="M3 4h2l2.05 9.12a2 2 0 0 0 1.95 1.56h7.86a2 2 0 0 0 1.95-1.55L20.3 7H6.25"
+        ></path>
+
+        <circle
+          cx="9"
+          cy="19"
+          r="1.25"
+        ></circle>
+
+        <circle
+          cx="17"
+          cy="19"
+          r="1.25"
+        ></circle>
+      </svg>
+
+      <span class="header-cart-label">
+        Carrinho
+      </span>
+
+      <span
+        class="header-cart-count"
+        id="headerCartCount"
+      >
+        0
+      </span>
+    `;
+
+
+    const menuToggleElement =
+      headerContainer.querySelector(
+        ".menu-toggle"
+      );
+
+
+    if (
+      menuToggleElement
+    ) {
+
+      headerContainer.insertBefore(
+        cartButton,
+        menuToggleElement
+      );
+
+    } else {
+
+      headerContainer.appendChild(
+        cartButton
+      );
+
+    }
+
+  }
+
+
+  const cartOverlay =
+    document.createElement(
+      "div"
+    );
+
+
+  cartOverlay.className =
+    "cart-overlay";
+
+
+  cartOverlay.id =
+    "cartOverlay";
+
+
+  cartOverlay.setAttribute(
+    "aria-hidden",
+    "true"
+  );
+
+
+  const cartDrawer =
+    document.createElement(
+      "aside"
+    );
+
+
+  cartDrawer.className =
+    "cart-drawer";
+
+
+  cartDrawer.id =
+    "cartDrawer";
+
+
+  cartDrawer.setAttribute(
+    "role",
+    "dialog"
+  );
+
+
+  cartDrawer.setAttribute(
+    "aria-modal",
+    "true"
+  );
+
+
+  cartDrawer.setAttribute(
+    "aria-labelledby",
+    "cartDrawerTitle"
+  );
+
+
+  cartDrawer.setAttribute(
+    "aria-hidden",
+    "true"
+  );
+
+
+  cartDrawer.innerHTML = `
+    <div class="cart-drawer-header">
+
+      <div>
+
+        <span class="cart-drawer-eyebrow">
+          Seu pedido
+        </span>
+
+        <h2 id="cartDrawerTitle">
+          Carrinho
+        </h2>
+
+      </div>
+
+
+      <button
+        type="button"
+        class="cart-close-button"
+        id="cartCloseButton"
+        aria-label="Fechar carrinho"
+      >
+        &times;
+      </button>
+
+    </div>
+
+
+    <div
+      class="cart-drawer-content"
+      id="cartDrawerContent"
+    >
+    </div>
+
+
+    <div
+      class="cart-drawer-footer"
+      id="cartDrawerFooter"
+    >
+
+      <div class="cart-summary-row">
+
+        <span>
+          Total de itens
+        </span>
+
+        <strong id="cartTotalItems">
+          0
+        </strong>
+
+      </div>
+
+
+      <p class="cart-checkout-note">
+        O pedido será enviado para o WhatsApp da Muryponário.
+        Valores, disponibilidade e entrega são confirmados no atendimento.
+      </p>
+
+
+      <button
+        type="button"
+        class="cart-whatsapp-button"
+        id="cartWhatsappButton"
+      >
+        Comprar pelo WhatsApp
+      </button>
+
+
+      <button
+        type="button"
+        class="cart-continue-button"
+        id="cartContinueButton"
+      >
+        Continuar escolhendo
+      </button>
+
+
+      <button
+        type="button"
+        class="cart-clear-button"
+        id="cartClearButton"
+      >
+        Limpar carrinho
+      </button>
+
+    </div>
+  `;
+
+
+  const cartToast =
+    document.createElement(
+      "div"
+    );
+
+
+  cartToast.className =
+    "cart-toast";
+
+
+  cartToast.id =
+    "cartToast";
+
+
+  cartToast.setAttribute(
+    "role",
+    "status"
+  );
+
+
+  cartToast.setAttribute(
+    "aria-live",
+    "polite"
+  );
+
+
+  document.body.appendChild(
+    cartOverlay
+  );
+
+
+  document.body.appendChild(
+    cartDrawer
+  );
+
+
+  document.body.appendChild(
+    cartToast
+  );
+
+}
+
+
+/* ========================================
+   BOTÕES NOS PRODUTOS
+======================================== */
+
+function cartInjectProductButtons() {
+
+  const productCards =
+    document.querySelectorAll(
+      ".catalog-product"
+    );
+
+
+  productCards.forEach(
+    (card) => {
+
+      if (
+        card.querySelector(
+          ".product-cart-controls"
+        )
+      ) {
+
+        return;
+
+      }
+
+
+      const productInfo =
+        card.querySelector(
+          ".product-info"
+        );
+
+
+      if (
+        !productInfo
+      ) {
+
+        return;
+
+      }
+
+
+      const whatsappProductButton =
+        card.querySelector(
+          ".js-whatsapp-product"
+        );
+
+
+      const productTitle =
+        card.querySelector(
+          "h3"
+        );
+
+
+      const productName =
+        whatsappProductButton?.dataset.product ||
+        card.dataset.sortName ||
+        productTitle?.textContent.trim();
+
+
+      if (
+        !productName
+      ) {
+
+        return;
+
+      }
+
+
+      const productImage =
+        card.querySelector(
+          ".product-image"
+        );
+
+
+      const controls =
+        document.createElement(
+          "div"
+        );
+
+
+      controls.className =
+        "product-cart-controls";
+
+
+      controls.innerHTML = `
+        <div
+          class="product-card-quantity"
+          aria-label="Escolher quantidade"
+        >
+
+          <button
+            type="button"
+            class="product-card-quantity-button"
+            data-product-quantity-action="decrease"
+            aria-label="Diminuir quantidade"
+          >
+            −
+          </button>
+
+
+          <span
+            class="product-card-quantity-value"
+            aria-live="polite"
+          >
+            1
+          </span>
+
+
+          <button
+            type="button"
+            class="product-card-quantity-button"
+            data-product-quantity-action="increase"
+            aria-label="Aumentar quantidade"
+          >
+            +
+          </button>
+
+        </div>
+
+
+        <button
+          type="button"
+          class="product-add-cart"
+        >
+
+          <svg
+            class="product-add-cart-icon"
+            viewBox="0 0 24 24"
+            aria-hidden="true"
+            focusable="false"
+          >
+            <path
+              d="M3 4h2l2.05 9.12a2 2 0 0 0 1.95 1.56h7.86a2 2 0 0 0 1.95-1.55L20.3 7H6.25"
+            ></path>
+
+            <circle
+              cx="9"
+              cy="19"
+              r="1.25"
+            ></circle>
+
+            <circle
+              cx="17"
+              cy="19"
+              r="1.25"
+            ></circle>
+          </svg>
+
+          <span>
+            Adicionar
+          </span>
+
+        </button>
+      `;
+
+
+      const addButton =
+        controls.querySelector(
+          ".product-add-cart"
+        );
+
+
+      const quantityValue =
+        controls.querySelector(
+          ".product-card-quantity-value"
+        );
+
+
+      const decreaseButton =
+        controls.querySelector(
+          '[data-product-quantity-action="decrease"]'
+        );
+
+
+      const increaseButton =
+        controls.querySelector(
+          '[data-product-quantity-action="increase"]'
+        );
+
+
+      let selectedQuantity =
+        1;
+
+
+      const updateQuantityDisplay =
+        () => {
+
+          quantityValue.textContent =
+            selectedQuantity;
+
+
+          decreaseButton.disabled =
+            selectedQuantity <=
+            1;
+
+
+          decreaseButton.setAttribute(
+            "aria-disabled",
+            selectedQuantity <= 1
+              ? "true"
+              : "false"
+          );
+
+        };
+
+
+      decreaseButton.addEventListener(
+        "click",
+        () => {
+
+          if (
+            selectedQuantity >
+            1
+          ) {
+
+            selectedQuantity -=
+              1;
+
+
+            updateQuantityDisplay();
+
+          }
+
+        }
+      );
+
+
+      increaseButton.addEventListener(
+        "click",
+        () => {
+
+          selectedQuantity +=
+            1;
+
+
+          updateQuantityDisplay();
+
+        }
+      );
+
+
+      addButton.dataset.cartProduct =
+        productName;
+
+
+      addButton.dataset.cartImage =
+        cartNormalizeImage(
+          productImage?.getAttribute(
+            "src"
+          ) || ""
+        );
+
+
+      addButton.addEventListener(
+        "click",
+        () => {
+
+          let selectedProductName =
+            addButton.dataset.cartProduct;
+
+
+          if (
+            selectedProductName ===
+            "Design Bee"
+          ) {
+
+            const activeDesignLabel =
+              card.querySelector(
+                ".product-carousel-slide.active .product-carousel-slide-label"
+              );
+
+
+            const designModel =
+              activeDesignLabel?.textContent.trim();
+
+
+            if (
+              designModel
+            ) {
+
+              selectedProductName =
+                `Design Bee - ${designModel}`;
+
+            }
+
+          }
+
+
+          cartAddItem(
+            {
+
+              name:
+                selectedProductName,
+
+              image:
+                addButton.dataset.cartImage,
+
+              quantity:
+                selectedQuantity
+
+            }
+          );
+
+
+          selectedQuantity =
+            1;
+
+
+          updateQuantityDisplay();
+
+        }
+      );
+
+
+      updateQuantityDisplay();
+
+
+      productInfo.appendChild(
+        controls
+      );
+
+    }
+  );
+
+}
+
+
+/* ========================================
+   ADICIONAR
+======================================== */
+
+function cartAddItem(
+  product
+) {
+
+  const productName =
+    String(
+      product.name || ""
+    ).trim();
+
+
+  if (
+    !productName
+  ) {
+
+    return;
+
+  }
+
+
+  const existingItem =
+    cartItems.find(
+      (item) => {
+
+        return (
+          item.name ===
+          productName
+        );
+
+      }
+    );
+
+
+  const requestedQuantity =
+    Math.max(
+      1,
+      Number.parseInt(
+        product.quantity,
+        10
+      ) || 1
+    );
+
+
+  if (
+    existingItem
+  ) {
+
+    existingItem.quantity +=
+      requestedQuantity;
+
+  } else {
+
+    cartItems.push(
+      {
+
+        name:
+          productName,
+
+        image:
+          product.image || "",
+
+        quantity:
+          requestedQuantity
+
+      }
+    );
+
+  }
+
+
+  cartSave();
+
+  cartRender();
+
+
+  cartShowToast(
+    requestedQuantity === 1
+      ? `${productName} foi adicionado ao carrinho.`
+      : `${requestedQuantity} unidades de ${productName} foram adicionadas ao carrinho.`
+  );
+
+}
+
+
+/* ========================================
+   QUANTIDADE NO CARRINHO
+======================================== */
+
+function cartChangeQuantity(
+  productName,
+  amount
+) {
+
+  const item =
+    cartItems.find(
+      (cartItem) => {
+
+        return (
+          cartItem.name ===
+          productName
+        );
+
+      }
+    );
+
+
+  if (
+    !item
+  ) {
+
+    return;
+
+  }
+
+
+  item.quantity +=
+    amount;
+
+
+  if (
+    item.quantity <=
+    0
+  ) {
+
+    cartItems =
+      cartItems.filter(
+        (cartItem) => {
+
+          return (
+            cartItem.name !==
+            productName
+          );
+
+        }
+      );
+
+  }
+
+
+  cartSave();
+
+  cartRender();
+
+}
+
+
+/* ========================================
+   REMOVER
+======================================== */
+
+function cartRemoveItem(
+  productName
+) {
+
+  cartItems =
+    cartItems.filter(
+      (item) => {
+
+        return (
+          item.name !==
+          productName
+        );
+
+      }
+    );
+
+
+  cartSave();
+
+  cartRender();
+
+}
+
+
+/* ========================================
+   RENDER
+======================================== */
+
+function cartRender() {
+
+  const cartCount =
+    document.getElementById(
+      "headerCartCount"
+    );
+
+
+  const cartContent =
+    document.getElementById(
+      "cartDrawerContent"
+    );
+
+
+  const cartFooter =
+    document.getElementById(
+      "cartDrawerFooter"
+    );
+
+
+  const cartTotalItems =
+    document.getElementById(
+      "cartTotalItems"
+    );
+
+
+  const totalQuantity =
+    cartGetTotalQuantity();
+
+
+  if (
+    cartCount
+  ) {
+
+    cartCount.textContent =
+      totalQuantity;
+
+
+    cartCount.setAttribute(
+      "aria-label",
+      `${totalQuantity} ${
+        totalQuantity === 1
+          ? "item"
+          : "itens"
+      } no carrinho`
+    );
+
+
+    cartCount.classList.toggle(
+      "has-items",
+      totalQuantity > 0
+    );
+
+  }
+
+
+  if (
+    cartTotalItems
+  ) {
+
+    cartTotalItems.textContent =
+      totalQuantity;
+
+  }
+
+
+  if (
+    !cartContent
+  ) {
+
+    return;
+
+  }
+
+
+  if (
+    cartItems.length ===
+    0
+  ) {
+
+    cartContent.innerHTML = `
+      <div class="cart-empty-state">
+
+        <span
+          class="cart-empty-icon"
+          aria-hidden="true"
+        >
+          ♡
+        </span>
+
+        <h3>
+          Seu carrinho está vazio
+        </h3>
+
+        <p>
+          Adicione os produtos que deseja e envie a lista completa para a Muryponário pelo WhatsApp.
+        </p>
+
+        <a
+          href="produtos.html"
+          class="cart-empty-link"
+        >
+          Ver produtos
+        </a>
+
+      </div>
+    `;
+
+
+    if (
+      cartFooter
+    ) {
+
+      cartFooter.classList.add(
+        "is-empty"
+      );
+
+    }
+
+
+    return;
+
+  }
+
+
+  if (
+    cartFooter
+  ) {
+
+    cartFooter.classList.remove(
+      "is-empty"
+    );
+
+  }
+
+
+  cartContent.innerHTML =
+    cartItems.map(
+      (
+        item,
+        index
+      ) => {
+
+        const safeName =
+          cartEscapeHTML(
+            item.name
+          );
+
+
+        const safeImage =
+          cartEscapeHTML(
+            item.image || ""
+          );
+
+
+        return `
+          <article
+            class="cart-item"
+            data-cart-index="${index}"
+          >
+
+            <div class="cart-item-image-wrapper">
+
+              ${
+                safeImage
+                  ? `
+                    <img
+                      src="${safeImage}"
+                      alt="${safeName}"
+                      class="cart-item-image"
+                    >
+                  `
+                  : `
+                    <div
+                      class="cart-item-image-placeholder"
+                      aria-hidden="true"
+                    >
+                      ✦
+                    </div>
+                  `
+              }
+
+            </div>
+
+
+            <div class="cart-item-info">
+
+              <h3>
+                ${safeName}
+              </h3>
+
+
+              <div class="cart-item-actions">
+
+                <div
+                  class="cart-quantity"
+                  aria-label="Quantidade de ${safeName}"
+                >
+
+                  <button
+                    type="button"
+                    class="cart-quantity-button"
+                    data-cart-action="decrease"
+                    data-cart-name="${safeName}"
+                  >
+                    −
+                  </button>
+
+
+                  <span>
+                    ${item.quantity}
+                  </span>
+
+
+                  <button
+                    type="button"
+                    class="cart-quantity-button"
+                    data-cart-action="increase"
+                    data-cart-name="${safeName}"
+                  >
+                    +
+                  </button>
+
+                </div>
+
+
+                <button
+                  type="button"
+                  class="cart-remove-button"
+                  data-cart-action="remove"
+                  data-cart-name="${safeName}"
+                >
+                  Remover
+                </button>
+
+              </div>
+
+            </div>
+
+          </article>
+        `;
+
+      }
+    ).join("");
+
+
+  cartContent
+    .querySelectorAll(
+      "[data-cart-action]"
+    )
+    .forEach(
+      (button) => {
+
+        button.addEventListener(
+          "click",
+          () => {
+
+            const productName =
+              button.dataset.cartName;
+
+
+            const action =
+              button.dataset.cartAction;
+
+
+            if (
+              action ===
+              "increase"
+            ) {
+
+              cartChangeQuantity(
+                productName,
+                1
+              );
+
+            }
+
+
+            if (
+              action ===
+              "decrease"
+            ) {
+
+              cartChangeQuantity(
+                productName,
+                -1
+              );
+
+            }
+
+
+            if (
+              action ===
+              "remove"
+            ) {
+
+              cartRemoveItem(
+                productName
+              );
+
+            }
+
+          }
+        );
+
+      }
+    );
+
+}
+
+
+/* ========================================
+   ABRIR
+======================================== */
+
+function cartOpen() {
+
+  const cartDrawer =
+    document.getElementById(
+      "cartDrawer"
+    );
+
+
+  const cartOverlay =
+    document.getElementById(
+      "cartOverlay"
+    );
+
+
+  const cartButton =
+    document.getElementById(
+      "headerCartButton"
+    );
+
+
+  if (
+    !cartDrawer ||
+    !cartOverlay
+  ) {
+
+    return;
+
+  }
+
+
+  cartRender();
+
+
+  document.body.classList.add(
+    "cart-open"
+  );
+
+
+  cartDrawer.classList.add(
+    "is-open"
+  );
+
+
+  cartOverlay.classList.add(
+    "is-open"
+  );
+
+
+  cartDrawer.setAttribute(
+    "aria-hidden",
+    "false"
+  );
+
+
+  cartOverlay.setAttribute(
+    "aria-hidden",
+    "false"
+  );
+
+
+  cartButton?.setAttribute(
+    "aria-expanded",
+    "true"
+  );
+
+
+  document
+    .getElementById(
+      "cartCloseButton"
+    )
+    ?.focus();
+
+}
+
+
+/* ========================================
+   FECHAR
+======================================== */
+
+function cartClose() {
+
+  const cartDrawer =
+    document.getElementById(
+      "cartDrawer"
+    );
+
+
+  const cartOverlay =
+    document.getElementById(
+      "cartOverlay"
+    );
+
+
+  const cartButton =
+    document.getElementById(
+      "headerCartButton"
+    );
+
+
+  document.body.classList.remove(
+    "cart-open"
+  );
+
+
+  cartDrawer?.classList.remove(
+    "is-open"
+  );
+
+
+  cartOverlay?.classList.remove(
+    "is-open"
+  );
+
+
+  cartDrawer?.setAttribute(
+    "aria-hidden",
+    "true"
+  );
+
+
+  cartOverlay?.setAttribute(
+    "aria-hidden",
+    "true"
+  );
+
+
+  cartButton?.setAttribute(
+    "aria-expanded",
+    "false"
+  );
+
+}
+
+
+/* ========================================
+   LIMPAR
+======================================== */
+
+function cartClear() {
+
+  cartItems = [];
+
+
+  cartSave();
+
+  cartRender();
+
+
+  cartShowToast(
+    "Carrinho esvaziado."
+  );
+
+}
+
+
+/* ========================================
+   WHATSAPP DO PEDIDO
+======================================== */
+
+function cartSendToWhatsapp() {
+
+  if (
+    cartItems.length ===
+    0
+  ) {
+
+    return;
+
+  }
+
+
+  const totalQuantity =
+    cartGetTotalQuantity();
+
+
+  const productLines =
+    cartItems.map(
+      (item) => {
+
+        return (
+          `• ${item.quantity}x ${item.name}`
+        );
+
+      }
+    ).join(
+      "\n"
+    );
+
+
+  const message =
+    `Olá! Vim pelo site da Muryponário e gostaria de fazer um pedido. 🐝\n\n` +
+    `*Meu carrinho:*\n` +
+    `${productLines}\n\n` +
+    `*Total de itens:* ${totalQuantity}\n\n` +
+    `Poderia me informar os valores, a disponibilidade e as opções de entrega, por favor?`;
+
+
+  const whatsappURL =
+    `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
+
+
+  window.open(
+    whatsappURL,
+    "_blank",
+    "noopener,noreferrer"
+  );
+
+}
+
+
+/* ========================================
+   TOAST
+======================================== */
+
+let cartToastTimer =
+  null;
+
+
+function cartShowToast(
+  message
+) {
+
+  const toast =
+    document.getElementById(
+      "cartToast"
+    );
+
+
+  if (
+    !toast
+  ) {
+
+    return;
+
+  }
+
+
+  toast.textContent =
+    message;
+
+
+  toast.classList.add(
+    "is-visible"
+  );
+
+
+  if (
+    cartToastTimer
+  ) {
+
+    clearTimeout(
+      cartToastTimer
+    );
+
+  }
+
+
+  cartToastTimer =
+    setTimeout(
+      () => {
+
+        toast.classList.remove(
+          "is-visible"
+        );
+
+      },
+      2400
+    );
+
+}
+
+
+/* ========================================
+   EVENTOS
+======================================== */
+
+function cartBindInterfaceEvents() {
+
+  const cartButton =
+    document.getElementById(
+      "headerCartButton"
+    );
+
+
+  const closeButton =
+    document.getElementById(
+      "cartCloseButton"
+    );
+
+
+  const overlay =
+    document.getElementById(
+      "cartOverlay"
+    );
+
+
+  const continueButton =
+    document.getElementById(
+      "cartContinueButton"
+    );
+
+
+  const clearButton =
+    document.getElementById(
+      "cartClearButton"
+    );
+
+
+  const whatsappButton =
+    document.getElementById(
+      "cartWhatsappButton"
+    );
+
+
+  cartButton?.addEventListener(
+    "click",
+    cartOpen
+  );
+
+
+  closeButton?.addEventListener(
+    "click",
+    cartClose
+  );
+
+
+  overlay?.addEventListener(
+    "click",
+    cartClose
+  );
+
+
+  continueButton?.addEventListener(
+    "click",
+    cartClose
+  );
+
+
+  clearButton?.addEventListener(
+    "click",
+    cartClear
+  );
+
+
+  whatsappButton?.addEventListener(
+    "click",
+    cartSendToWhatsapp
+  );
+
+
+  document.addEventListener(
+    "keydown",
+    (event) => {
+
+      if (
+        event.key ===
+        "Escape"
+      ) {
+
+        cartClose();
+
+      }
+
+    }
+  );
+
+}
+
+
+/* ========================================
+   INICIALIZAR
+======================================== */
+
+function cartInitialize() {
+
+  cartLoad();
+
+  cartCreateInterface();
+
+  cartInjectProductButtons();
+
+  cartBindInterfaceEvents();
+
+  cartRender();
+
+}
+
+
+cartInitialize();

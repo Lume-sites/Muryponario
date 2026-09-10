@@ -103,9 +103,12 @@ p {
 .eyebrow {
   display: inline-block;
   margin-bottom: 18px;
+
   color: var(--gold-dark);
+
   font-size: 0.74rem;
   font-weight: 700;
+
   letter-spacing: 0.15em;
   text-transform: uppercase;
 }
@@ -447,6 +450,7 @@ p {
   color: var(--text);
 
   font-family: "Playfair Display", serif;
+
   font-size: 1.03rem;
 }
 
@@ -558,7 +562,7 @@ p {
 
 
 /* ========================================
-   CARROSSEL
+   CARROSSEL DOS CARDS DE PRODUTO
 ======================================== */
 
 .product-carousel {
@@ -706,6 +710,7 @@ p {
   padding: 0;
 
   border: 0;
+
   border-radius: 50%;
 
   background: rgba(71, 56, 18, 0.30);
@@ -753,6 +758,7 @@ p {
 .product-carousel-placeholder,
 .product-carousel-fallback {
   position: absolute;
+
   inset: 0;
 
   display: flex;
@@ -773,6 +779,7 @@ p {
   text-align: center;
 
   font-family: "Playfair Display", serif;
+
   font-size: 1rem;
   font-weight: 600;
 }
@@ -918,6 +925,11 @@ p {
   gap: 20px;
 }
 
+
+/* ========================================
+   CARD ENCOMENDA
+======================================== */
+
 .order-card {
   min-height: 510px;
 
@@ -947,6 +959,11 @@ p {
   box-shadow: var(--shadow);
 }
 
+
+/* ========================================
+   IMAGEM ENCOMENDA
+======================================== */
+
 .order-card-image-wrapper {
   width: 100%;
 
@@ -973,6 +990,11 @@ p {
   transform: scale(1.035);
 }
 
+
+/* ========================================
+   CONTEÚDO ENCOMENDA
+======================================== */
+
 .order-card-content {
   flex: 1;
 
@@ -996,6 +1018,7 @@ p {
   color: rgba(169, 120, 8, 0.34);
 
   font-family: "Playfair Display", serif;
+
   font-size: 2.3rem;
   font-weight: 700;
 
@@ -1034,6 +1057,11 @@ p {
   line-height: 1.7;
 }
 
+
+/* ========================================
+   CTA ENCOMENDAS
+======================================== */
+
 .orders-cta {
   margin-top: 26px;
 
@@ -1063,6 +1091,7 @@ p {
   color: var(--text);
 
   font-family: "Playfair Display", serif;
+
   font-size: 1.35rem;
 }
 
@@ -1126,6 +1155,7 @@ p {
   color: var(--text);
 
   font-family: "DM Sans", sans-serif;
+
   font-size: 0.96rem;
 }
 
@@ -1175,6 +1205,11 @@ p {
 
   object-fit: cover;
 }
+
+
+/* ========================================
+   FOTO + VÍDEO DO FABINHO
+======================================== */
 
 .about-story-media {
   position: relative;
@@ -1231,6 +1266,12 @@ p {
   object-fit: contain;
 }
 
+
+/* ========================================
+   VÍDEO DA ANDRÉIA
+   TAMANHO NATURAL / SEM CROP
+======================================== */
+
 .about-video-wrapper {
   position: relative;
 
@@ -1248,6 +1289,9 @@ p {
   background: transparent;
 }
 
+
+/* O VÍDEO DEFINE A PRÓPRIA ALTURA */
+
 .about-video {
   width: 100%;
   height: auto;
@@ -1260,6 +1304,11 @@ p {
   background: transparent;
 }
 
+
+/* ========================================
+   PLAYER PERSONALIZADO
+======================================== */
+
 .story-video-player {
   position: relative;
 
@@ -1269,6 +1318,9 @@ p {
 
   background: transparent;
 }
+
+
+/* VÍDEO ATRÁS DA CAPA */
 
 .story-video {
   position: relative;
@@ -1281,8 +1333,14 @@ p {
   display: block;
 }
 
+
+/* ========================================
+   CAPA PERSONALIZADA
+======================================== */
+
 .story-video-cover {
   position: absolute;
+
   inset: 0;
 
   z-index: 10;
@@ -1335,8 +1393,14 @@ p {
 
 .story-video-cover:focus-visible {
   outline: 3px solid var(--gold);
+
   outline-offset: -6px;
 }
+
+
+/* ========================================
+   CONTEÚDO SOBRE
+======================================== */
 
 .about-content {
   max-width: 520px;
@@ -1358,12 +1422,18 @@ p {
   margin-top: 17px;
 }
 
+
+/* ========================================
+   SÍTIO ARUÁ
+======================================== */
+
 .arua-section {
   background: var(--cream);
 }
 
 .arua-disclaimer {
   font-size: 0.8rem;
+
   font-style: italic;
 
   opacity: 0.78;
@@ -1437,11 +1507,7 @@ p {
   color: var(--text);
 
   font-size:
-    clamp(
-      3rem,
-      6vw,
-      4.5rem
-    );
+    clamp(3rem, 6vw, 4.5rem);
 }
 
 .products-hero p {
@@ -1464,6 +1530,7 @@ p {
   color: var(--gold-dark);
 
   font-family: "Playfair Display", serif;
+
   font-size: 1.03rem;
   font-weight: 600;
 }
@@ -1589,6 +1656,7 @@ p {
   color: #ffe7a1;
 
   font-family: "DM Sans", sans-serif;
+
   font-size: 0.8rem;
 
   letter-spacing: 0.08em;
@@ -1712,6 +1780,7 @@ p {
 
   .logo {
     width: 245px;
+
     max-height: 78px;
   }
 
@@ -1730,7 +1799,8 @@ p {
 
     background: var(--cream);
 
-    border-bottom: 1px solid var(--border);
+    border-bottom:
+      1px solid var(--border);
   }
 
   .hero-text {
@@ -1744,7 +1814,8 @@ p {
   .product-grid,
   .catalog-grid,
   .home-products-three {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns:
+      repeat(2, 1fr);
   }
 
   .home-products-three {
@@ -1758,7 +1829,8 @@ p {
   }
 
   .orders-grid {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns:
+      repeat(2, 1fr);
   }
 
   .order-card:last-child {
@@ -1779,6 +1851,9 @@ p {
     max-width: 700px;
   }
 
+
+  /* FOTO + VÍDEO FABINHO */
+
   .about-story-media {
     width: 70%;
     max-width: 360px;
@@ -1795,6 +1870,11 @@ p {
 
     border-width: 4px;
   }
+
+
+  /* =====================================
+     VÍDEO ANDRÉIA - TABLET
+  ====================================== */
 
   .about-video-wrapper {
     width: 72%;
@@ -1815,8 +1895,12 @@ p {
     object-fit: contain;
   }
 
+
+  /* FOOTER */
+
   .footer-grid {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns:
+      repeat(2, 1fr);
   }
 
   .footer-logo {
@@ -1835,8 +1919,15 @@ p {
 @media (max-width: 650px) {
 
   .container {
-    width: min(1180px, calc(100% - 24px));
+    width:
+      min(
+        1180px,
+        calc(100% - 24px)
+      );
   }
+
+
+  /* HEADER */
 
   .header-container {
     min-height: 78px;
@@ -1844,12 +1935,16 @@ p {
 
   .logo {
     width: 195px;
+
     max-height: 68px;
   }
 
   .nav.mobile-open {
     top: 78px;
   }
+
+
+  /* HERO */
 
   .hero {
     min-height: 680px;
@@ -1858,7 +1953,8 @@ p {
   }
 
   .hero-image {
-    object-position: 66% center;
+    object-position:
+      66% center;
   }
 
   .hero-overlay {
@@ -1897,13 +1993,15 @@ p {
 
   .hero-buttons {
     flex-direction: column;
-
     align-items: stretch;
   }
 
   .hero-buttons .btn {
     width: 100%;
   }
+
+
+  /* FÓRMULA */
 
   .brand-formula {
     padding: 35px 0;
@@ -1915,6 +2013,9 @@ p {
     gap: 22px;
   }
 
+
+  /* SEÇÕES */
+
   .section {
     padding: 72px 0;
   }
@@ -1922,6 +2023,12 @@ p {
   .section-heading {
     margin-bottom: 38px;
   }
+
+
+  /* ========================================
+     PRODUTOS
+     2 PRODUTOS POR LINHA
+  ======================================== */
 
   .catalog-grid {
     grid-template-columns:
@@ -1994,7 +2101,6 @@ p {
     display: -webkit-box;
 
     line-clamp: 5;
-
     -webkit-line-clamp: 5;
 
     -webkit-box-orient: vertical;
@@ -2009,6 +2115,9 @@ p {
 
     line-height: 1.3;
   }
+
+
+  /* CARROSSEL MOBILE */
 
   .product-carousel-arrow {
     width: 34px;
@@ -2046,7 +2155,8 @@ p {
     left: 8px;
     bottom: 38px;
 
-    max-width: calc(100% - 16px);
+    max-width:
+      calc(100% - 16px);
 
     padding: 5px 8px;
 
@@ -2056,6 +2166,9 @@ p {
   .products-highlight {
     padding-bottom: 45px;
   }
+
+
+  /* ENCOMENDAS */
 
   .orders-section {
     padding-top: 52px;
@@ -2096,7 +2209,6 @@ p {
 
   .orders-cta {
     flex-direction: column;
-
     align-items: stretch;
 
     gap: 22px;
@@ -2108,11 +2220,17 @@ p {
     width: 100%;
   }
 
+
+  /* BENEFÍCIOS */
+
   .benefits-grid {
     grid-template-columns: 1fr;
 
     gap: 28px;
   }
+
+
+  /* SOBRE */
 
   .about-image-wrapper {
     min-height: 400px;
@@ -2121,6 +2239,9 @@ p {
   .about-image {
     height: 400px;
   }
+
+
+  /* FOTO + MINI VÍDEO FABINHO */
 
   .about-story-media {
     width: 82%;
@@ -2151,6 +2272,12 @@ p {
     border-radius: 9px;
   }
 
+
+  /* =====================================
+     VÍDEO ANDRÉIA - MOBILE
+     MENOR E SEM CROP
+  ====================================== */
+
   .about-video-wrapper {
     width: 72%;
     max-width: 280px;
@@ -2171,9 +2298,15 @@ p {
     object-position: center;
   }
 
+
+  /* CTA */
+
   .final-cta {
     padding: 85px 0;
   }
+
+
+  /* FILTROS */
 
   .filters {
     justify-content: flex-start;
@@ -2195,6 +2328,9 @@ p {
     flex: 0 0 auto;
   }
 
+
+  /* FOOTER */
+
   .footer-grid {
     grid-template-columns: 1fr;
 
@@ -2206,6 +2342,9 @@ p {
 
     margin-left: -8px;
   }
+
+
+  /* WHATSAPP */
 
   .floating-whatsapp {
     right: 16px;
@@ -2224,7 +2363,8 @@ p {
 
 
 /* ========================================
-   CARRINHO
+   CARRINHO DE PEDIDOS
+   CATÁLOGO -> WHATSAPP
 ======================================== */
 
 body.cart-open {
@@ -2233,7 +2373,7 @@ body.cart-open {
 
 
 /* ========================================
-   CARRINHO NO HEADER
+   BOTÃO DO CARRINHO NO HEADER
 ======================================== */
 
 .header-cart-button {
@@ -2249,13 +2389,10 @@ body.cart-open {
 
   padding: 0 13px;
 
-  border:
-    1px solid rgba(166, 120, 8, 0.22);
-
+  border: 1px solid rgba(166, 120, 8, 0.22);
   border-radius: 7px;
 
   background: #fffdf7;
-
   color: var(--text);
 
   font-size: 0.8rem;
@@ -2273,8 +2410,7 @@ body.cart-open {
 .header-cart-button:hover {
   transform: translateY(-1px);
 
-  border-color:
-    rgba(166, 120, 8, 0.38);
+  border-color: rgba(166, 120, 8, 0.38);
 
   background: #fff8e8;
 
@@ -2287,11 +2423,8 @@ body.cart-open {
   height: 21px;
 
   fill: none;
-
   stroke: currentColor;
-
   stroke-width: 1.8;
-
   stroke-linecap: round;
   stroke-linejoin: round;
 }
@@ -2309,7 +2442,6 @@ body.cart-open {
   border-radius: 999px;
 
   background: var(--cream-dark);
-
   color: var(--gold-dark);
 
   font-size: 0.68rem;
@@ -2320,7 +2452,6 @@ body.cart-open {
 
 .header-cart-count.has-items {
   background: var(--gold);
-
   color: #3c2d08;
 }
 
@@ -2506,8 +2637,7 @@ body.cart-open {
 
   z-index: 1998;
 
-  background:
-    rgba(49, 38, 12, 0.35);
+  background: rgba(49, 38, 12, 0.35);
 
   opacity: 0;
   visibility: hidden;
@@ -2522,13 +2652,12 @@ body.cart-open {
 
 .cart-overlay.is-open {
   opacity: 1;
-
   visibility: visible;
 }
 
 
 /* ========================================
-   GAVETA
+   GAVETA DO CARRINHO
 ======================================== */
 
 .cart-drawer {
@@ -2571,8 +2700,7 @@ body.cart-open {
 
   padding: 22px 24px;
 
-  border-bottom:
-    1px solid var(--border);
+  border-bottom: 1px solid var(--border);
 
   background: #fffdf7;
 }
@@ -2588,7 +2716,6 @@ body.cart-open {
   font-weight: 800;
 
   letter-spacing: 0.12em;
-
   text-transform: uppercase;
 }
 
@@ -2608,13 +2735,10 @@ body.cart-open {
   align-items: center;
   justify-content: center;
 
-  border:
-    1px solid rgba(166, 120, 8, 0.18);
-
+  border: 1px solid rgba(166, 120, 8, 0.18);
   border-radius: 50%;
 
   background: #fffaf1;
-
   color: var(--text);
 
   font-size: 1.8rem;
@@ -2633,11 +2757,9 @@ body.cart-open {
 .cart-close-button:hover {
   transform: rotate(4deg);
 
-  border-color:
-    rgba(166, 120, 8, 0.35);
+  border-color: rgba(166, 120, 8, 0.35);
 
-  background:
-    var(--cream-dark);
+  background: var(--cream-dark);
 }
 
 .cart-drawer-content {
@@ -2654,21 +2776,19 @@ body.cart-open {
 
 
 /* ========================================
-   ITEM
+   ITEM DO CARRINHO
 ======================================== */
 
 .cart-item {
   display: grid;
 
-  grid-template-columns:
-    80px minmax(0, 1fr);
+  grid-template-columns: 80px minmax(0, 1fr);
 
   gap: 14px;
 
   padding: 17px 0;
 
-  border-bottom:
-    1px solid rgba(166, 120, 8, 0.13);
+  border-bottom: 1px solid rgba(166, 120, 8, 0.13);
 }
 
 .cart-item-image-wrapper {
@@ -2677,9 +2797,7 @@ body.cart-open {
 
   overflow: hidden;
 
-  border:
-    1px solid rgba(166, 120, 8, 0.12);
-
+  border: 1px solid rgba(166, 120, 8, 0.12);
   border-radius: 8px;
 
   background: #f7edcf;
@@ -2719,7 +2837,6 @@ body.cart-open {
   color: var(--text);
 
   font-size: 1rem;
-
   line-height: 1.28;
 }
 
@@ -2737,9 +2854,7 @@ body.cart-open {
 
   overflow: hidden;
 
-  border:
-    1px solid rgba(166, 120, 8, 0.20);
-
+  border: 1px solid rgba(166, 120, 8, 0.20);
   border-radius: 6px;
 
   background: #fffdf7;
@@ -2756,7 +2871,6 @@ body.cart-open {
   border: 0;
 
   background: transparent;
-
   color: var(--text);
 
   font-size: 1.05rem;
@@ -2783,11 +2897,9 @@ body.cart-open {
   padding: 4px 0;
 
   border: 0;
-  border-bottom:
-    1px solid transparent;
+  border-bottom: 1px solid transparent;
 
   background: transparent;
-
   color: #8a7750;
 
   font-size: 0.7rem;
@@ -2799,8 +2911,7 @@ body.cart-open {
 .cart-remove-button:hover {
   color: var(--gold-dark);
 
-  border-bottom-color:
-    var(--gold);
+  border-bottom-color: var(--gold);
 }
 
 
@@ -2833,11 +2944,8 @@ body.cart-open {
 
   border-radius: 50%;
 
-  background:
-    var(--gold-soft);
-
-  color:
-    var(--gold-dark);
+  background: var(--gold-soft);
+  color: var(--gold-dark);
 
   font-size: 1.55rem;
 }
@@ -2854,7 +2962,6 @@ body.cart-open {
   max-width: 295px;
 
   font-size: 0.83rem;
-
   line-height: 1.65;
 }
 
@@ -2866,13 +2973,11 @@ body.cart-open {
   justify-content: center;
 
   margin-top: 21px;
-
   padding: 0 19px;
 
   border-radius: 6px;
 
   background: var(--gold);
-
   color: #3c2d08;
 
   font-size: 0.78rem;
@@ -2881,14 +2986,13 @@ body.cart-open {
 
 
 /* ========================================
-   FOOTER DO CARRINHO
+   RODAPÉ DO CARRINHO
 ======================================== */
 
 .cart-drawer-footer {
   padding: 19px 24px 22px;
 
-  border-top:
-    1px solid var(--border);
+  border-top: 1px solid var(--border);
 
   background: #fffdf7;
 
@@ -2922,14 +3026,12 @@ body.cart-open {
   margin-bottom: 15px;
 
   font-size: 0.71rem;
-
   line-height: 1.5;
 }
 
 .cart-whatsapp-button,
 .cart-continue-button {
   width: 100%;
-
   min-height: 48px;
 
   display: flex;
@@ -2952,55 +3054,42 @@ body.cart-open {
 }
 
 .cart-whatsapp-button {
-  border:
-    1px solid var(--olive);
+  border: 1px solid var(--olive);
 
-  background:
-    var(--olive);
-
+  background: var(--olive);
   color: #ffffff;
 }
 
 .cart-whatsapp-button:hover {
   transform: translateY(-1px);
 
-  background:
-    var(--olive-dark);
-
-  border-color:
-    var(--olive-dark);
+  background: var(--olive-dark);
+  border-color: var(--olive-dark);
 }
 
 .cart-continue-button {
   margin-top: 9px;
 
-  border:
-    1px solid rgba(166, 120, 8, 0.24);
+  border: 1px solid rgba(166, 120, 8, 0.24);
 
   background: #fffaf1;
-
   color: var(--text);
 }
 
 .cart-continue-button:hover {
-  background:
-    var(--cream-dark);
+  background: var(--cream-dark);
 }
 
 .cart-clear-button {
   display: block;
 
   margin: 12px auto 0;
-
   padding: 2px 0;
 
   border: 0;
-
-  border-bottom:
-    1px solid transparent;
+  border-bottom: 1px solid transparent;
 
   background: transparent;
-
   color: #8a7750;
 
   font-size: 0.68rem;
@@ -3012,13 +3101,12 @@ body.cart-open {
 .cart-clear-button:hover {
   color: var(--gold-dark);
 
-  border-bottom-color:
-    var(--gold);
+  border-bottom-color: var(--gold);
 }
 
 
 /* ========================================
-   TOAST
+   AVISO DE PRODUTO ADICIONADO
 ======================================== */
 
 .cart-toast {
@@ -3029,18 +3117,14 @@ body.cart-open {
 
   z-index: 2100;
 
-  max-width:
-    min(380px, calc(100% - 32px));
+  max-width: min(380px, calc(100% - 32px));
 
   padding: 12px 17px;
 
-  border:
-    1px solid rgba(166, 120, 8, 0.18);
-
+  border: 1px solid rgba(166, 120, 8, 0.18);
   border-radius: 8px;
 
   background: #fffdf7;
-
   color: var(--text);
 
   box-shadow:
@@ -3065,7 +3149,6 @@ body.cart-open {
 
 .cart-toast.is-visible {
   opacity: 1;
-
   visibility: visible;
 
   transform:
@@ -3074,7 +3157,7 @@ body.cart-open {
 
 
 /* ========================================
-   CARRINHO RESPONSIVO
+   CARRINHO - TABLET / MOBILE
 ======================================== */
 
 @media (max-width: 1000px) {
@@ -3127,7 +3210,6 @@ body.cart-open {
     margin-top: 10px;
   }
 
-
   .catalog-product .product-card-quantity {
     width: 100%;
 
@@ -3138,7 +3220,6 @@ body.cart-open {
       40px 1fr 40px;
   }
 
-
   .catalog-product .product-card-quantity-button {
     width: 40px;
 
@@ -3147,13 +3228,11 @@ body.cart-open {
     font-size: 0.94rem;
   }
 
-
   .catalog-product .product-card-quantity-value {
     min-width: 28px;
 
     font-size: 0.72rem;
   }
-
 
   .catalog-product .product-add-cart {
     width: 100%;
@@ -3166,7 +3245,6 @@ body.cart-open {
 
     font-size: 0.71rem;
   }
-
 
   .catalog-product .product-add-cart-icon {
     width: 16px;
@@ -3202,8 +3280,7 @@ body.cart-open {
   }
 
   .cart-item {
-    grid-template-columns:
-      70px minmax(0, 1fr);
+    grid-template-columns: 70px minmax(0, 1fr);
 
     gap: 12px;
 
